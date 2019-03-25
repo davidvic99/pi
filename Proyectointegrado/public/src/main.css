@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+}
+#userInfo{
+    float:right;
+    margin-right:10%;
+    margin-top:1%;
+ 
+}
+#nivel{
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:25px;
+    padding:3px;
+    margin-left:15px;
+   
+}
+#puntosUsuario{
+    float:left;
+    padding-top:14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    height: 57px;
+    width:105px;
+    padding-left: 2px;    
+   
+}
+#bronceM{
+    width:50px;
+}
+
+#userimg{
+    float:right;
+    width:50px;
+    margin-right:-50px;
+}
+#intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+}
+input[type="text"] {
+    width: 250px;
+    text-align: center;
+    
+
+  
+  }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+
+		
+  
+  }
+  
+  input:hover[type="submit"] 
+		{
+            width:100px;
+            background: rgb(0, 0, 0);
+            border-style: solid;
+            border-width: 0.5px;
+            border-color:#ffffff;
+            color:white;
+        }
+#info{
+   margin-top:1%;
+}
+        
+        .rojo{
+            color:#bd2f3b
+        }
+        .verde{
+            color:#0e8b34
+        }
+#ofertabronce{
+    width:100%;
+    float: left;
+
+}
+h2{
+    margin-left:3%;
+}
+#oferta1{
+    width:17%;
+    margin-left:3%; 
+    float:left;
+}
+#ofertas1txt{
+    margin-left:2%; 
+    float:left;
+}
+#ofertasplata{
+    width:100%;
+    float: left;
+    margin-top:2%;      
+
+}
+#ofertasoro{
+    width:100%;
+    float: left;
+    margin-top:2%;      
+
+}
