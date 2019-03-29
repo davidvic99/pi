@@ -20,14 +20,14 @@ input {
   margin-left:640px;
 }
 img {
-  width:170px;
-  height:170px;
+  width:200px;
+  height:200px;
   margin-left:50px;
   padding-top:5px;
 }
 form {
-  margin-left:250px;
-  padding-top:5px;
+  margin-left:450px;
+  padding-top:2px;
 }
 .div2 {
   margin-left:145px;
@@ -55,4 +55,16 @@ body {
 #correo {
   margin-left: 25px;
   width:250px;
+}
+#ciudad {
+  margin-left: 24px;
+  width:250px;
+}
+#edad {
+  margin-left: 25px;
+  width:250px;
+}
+
+#cambiarFoto {
+  margin-left: 85px;
 }
