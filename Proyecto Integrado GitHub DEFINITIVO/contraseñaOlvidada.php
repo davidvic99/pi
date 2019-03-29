@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/estiloLogin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
@@ -12,12 +12,8 @@
     </div>
     <div>
       <form method="post">
-        <p><label id="dni">DNI o Nombre de usuario</label></p>
+        <p><label id="dni">Nueva contraseña</label></p>
         <p><input id="dni_txt" type="text"></p>
-        <p><label id="psw">Nueva contraseña</label></p>
-        <p><input id="psw_txt" type="text"></p>
-        <p><label id="psw">Repite la nueva contraseña</label></p>
-        <p><input id="psw_txt" type="text"></p>
         <div class="div3">
         <input id="rt_log" class="button" type="button" value="Enviar">
         <a href="login.html">Volver al login</a>

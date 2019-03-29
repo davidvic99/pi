@@ -1,0 +1,70 @@
+img#perfil{
+    float: left;
+    width: 50px;
+    margin-top: 5%;
+    margin-left:5%;
+  }
+  
+  div.info{
+    float: left;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+  
+  div.nivel{
+    float: left;
+    margin-left: -5%;
+    margin-top: 13%;
+  }
+  div.puntosAc{
+    float: left;
+    margin-left: 5%;
+    margin-top: 13%;
+  }
+  
+  div.puntosNe{
+    float: left;
+    margin-left: 7%;
+    margin-top: 6.3%;
+  }
+  
+  div.ProcesoNivel{
+    float: left;
+    margin-top: 13%;
+    margin-left: -48%;
+  }
+  
+  div.adInfo{
+    float: left;
+    margin-top: 11%;
+    margin-left: -43%;
+  }
+  
+  hr{
+    float: none;
+    margin-top: -20%;
+  }
+  
+  div#barraPro{
+    width: 700px;
+    float: left;
+    margin-left: -9.8%;
+    margin-top: 7%;
+  }
+  
+  input[type="submit"]{
+    float: right;
+    margin-right: 25%;
+    margin-top: 5%;
+  }
+  
+  img#nivel{
+    float: left;
+    width: 60px;
+    margin-top: 13%;
+    margin-left: -12%;
+  }
+
+#centro{
+    margin-left: 45%;
+}

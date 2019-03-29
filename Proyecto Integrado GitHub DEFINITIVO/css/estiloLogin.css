@@ -1,3 +1,14 @@
+  
+  
+  
+#fondo{
+  width: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}  
+  
 .button {
   border-radius: 5px;
   width: 70px;
@@ -7,7 +18,7 @@
   background-color: #c9c9c9;
 }
 input:hover {
-  background-color:#ededed;
+  background-color:#ededed; 
 }
 input {
   border-top: 0px;
@@ -16,17 +27,14 @@ input {
   border-color:#8c8c8c;
 }
 .div1 {
-  margin-top:15px;
-  margin-left:650px;
+  display: block;
+  padding: 100px; 
 }
 img {
-  width:250px;
-  height:110px;
+  width:270px;
+  height:130px;
 }
-form {
-  margin-left:550px;
-  padding-top:100px;
-}
+
 #dni_txt {
   width:450px;
 }
