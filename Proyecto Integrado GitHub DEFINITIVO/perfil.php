@@ -8,14 +8,14 @@
     <title></title>
   </head>
   <body>
-    <img id="perfil" src="public/img/user.jpg" alt="">
+    <img id="perfil" src="./img/user.jpg" alt="">
     <div class="info">Nombre y Apellido:   EJEMPLO EJEMPLO <br>
     <i>DNI: 2102301302W</i>
     </div>
     <br>    
  
     <a href="editarPerfil.php   "><input type="submit" name="editarPerfil" value="Editar Perfil"></a>
-    <img id="nivel" src="public/img/bronce.jpg" alt="">
+    <img id="nivel" src="./img/bronce.jpg" alt="">
     <div class="nivel"><b>Nivel</b><br>
     Bronce</div>
     <div class="puntosAc"><b>Puntos Actuales</b><br>
