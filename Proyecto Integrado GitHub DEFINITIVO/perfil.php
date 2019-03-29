@@ -15,7 +15,7 @@
     <br>    
  
     <a href="editarPerfil.php   "><input type="submit" name="editarPerfil" value="Editar Perfil"></a>
-    <img id="nivel" src="./img/bronce.jpg" alt="">
+    <img id="nivel" src="./img/bronce.png" alt="">
     <div class="nivel"><b>Nivel</b><br>
     Bronce</div>
     <div class="puntosAc"><b>Puntos Actuales</b><br>
