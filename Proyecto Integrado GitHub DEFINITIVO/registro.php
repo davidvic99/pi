@@ -17,11 +17,11 @@
         Apellidos:
         <input type="text" name="apellido" value="" required><br><br><br>
         DNI:
-        <input type="text" name="usuario" value="" required><br><br><br>
+        <input type="text" name="dni" value="" required><br><br><br>
         E-mail:
         <input type="email" name="email" value="" required><br><br><br>
         Estudios:
-        <select name="transporte" required >
+        <select name="estudios" required >
           <option selected>DAW</option>
           <option>3D</option>
           <option>ASIR</option>
