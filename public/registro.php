@@ -1,3 +1,17 @@
+<?php
+
+require_once('../src/registro.php');
+
+if (!empty($_POST)) {
+    $conexion = new conexion();
+    $conexion = $conexion->conectar();
+
+    $registro = new Registro();
+    $registro = $registro->registrar($conexion,$_POST);    
+
+
+}else{  
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -35,3 +49,4 @@
 </form>
   </body>
 </html>
+<?php }  ?>

@@ -1,3 +1,15 @@
+<?php 
+require_once('../src/addKey.php');
+if(isset($_POST)){
+
+    $username= "apok99";
+    $conexion = new conexion();
+    $conexion = $conexion->conectar();
+
+    $AñadirCodigo = new AñadirCodigo();
+    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$username);    
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,20 +17,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/estiloMain.css">
 
 </head>
 <body>
 
 <div id="userInfo">
-    <div id="puntosUsuario">Puntos: 45🔥</div>
+    <div id="puntosUsuario"><div class="InUsuario">Puntos: 45🔥</div></div>
     <div id="nivel"><div class="inNivel">Nivel: Bronce</div><img id="bronceM" src="./img/bronce.png"></div>
     <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
 </div>
 <div id="form">
 <form id="intCodigo" action="hola.php" method="POST" name="codigo" >
     <p class="tituloForm"><b>Introducir Código</b></p>
-    <input type="text" class="codigoInput" name="codigo" placeholder="0123-4567-8901-2345" pattern="[0-9&-]{19}" required>
+    <input type="text" class="codigoInput" name="codigo" placeholder="1eXs1d8Ya8aReJd" required>
     <input type="submit" class="validarInput" value="Validar">
     <div id="info">
     <p class="rojo">El codigo fue usado/ no es valido. <span class="verde">El codigo es correcto</span></p>
