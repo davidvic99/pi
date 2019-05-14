@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>Editar Perfil</title>
     <link rel="stylesheet" href="./css/editarPerfil.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <div id="xdddsaxcs" >
-   
+
       <img id="fotoPerfil" src="./img/FotoPerfil.png" />
-      <p> <button id="buttonfoto" type="button">Subir Archivo</button> 
-       
-    
+      <p> <button id="buttonfoto" type="button">Subir Archivo</button>
+
+
     <div>
     <form id="editar">
       <p> Nombre <input type="text" id="nombre" /> </p>
@@ -186,7 +185,7 @@
           <input type="submit" value="Guardar" />
          <a href="perfil.php"> <input type="button" value="Volver" /></a>
          </div>
-    
+
     </form>
     </div>
   </body>

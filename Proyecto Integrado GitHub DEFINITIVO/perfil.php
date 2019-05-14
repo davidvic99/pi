@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloPerfil.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title></title>
   </head>
   <body>
@@ -12,8 +10,8 @@
     <div class="info">Nombre y Apellido:   EJEMPLO EJEMPLO <br>
     <i>DNI: 2102301302W</i>
     </div>
-    <br>    
- 
+    <br>
+
     <a href="editarPerfil.php   "><input type="submit" name="editarPerfil" value="Editar Perfil"></a>
     <img id="nivel" src="./img/bronce.png" alt="">
     <div class="nivel"><b>Nivel</b><br>
@@ -41,7 +39,7 @@
     <p>Estudios: DAW</p>
     <p>Correo: yomismo@yomismo.cat</p>
     <p>Ciudad: Valencia</p>
-    
+
     </p>
     </div>
   </body>
