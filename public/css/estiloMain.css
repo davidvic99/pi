@@ -138,8 +138,60 @@ a:hover{
   color:#52adce;
   text-decoration: underline;
   }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 411px) {
+  #userInfo{
+    float:left;
+    margin-left: 8%;
+    margin-top:1%;
+    }
+  #nivel{
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:15px;
+    padding:3px;
+    margin-left:11px;
+    }
+  .inNivel{
+    float:left;
+    text-align: center;
+    margin-top: 16px;
+    }
+  #puntosUsuario{
+    float:left;
+    padding-top:10px;
+    margin-left: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    height: 32px;
+    width:105px;
+    text-align: center;
+    }
+    #oferta1{
+      width:36%;
+      height: 25%;
+      margin-left:3%;
+      float:left;
+      }
+    #ofertas1txt{
+      margin-left:1%;
+      float:left;
+      line-height: 28px;
+      }
+    #ofertasplata{
+      width:100%;
+      float: left;
+      margin-top:2%;
+      }
+    #ofertasoro{
+      width:100%;
+      float: left;
+      margin-top:2%;
+      }
+}
+@media only screen and (max-width: 360px) {
   body{
     margin:0px;
     font-family: sans-serif;
@@ -200,7 +252,7 @@ a:hover{
     width:50px;
     }
   #userimg{
-    float:right;
+    float:left;
     width:50px;
     margin-right:-42px;
     }
