@@ -11,7 +11,7 @@
 <body>
 
 <div id="userInfo">
-    <div id="puntosUsuario">Puntos: 45🔥</div>
+    <div id="puntosUsuario"><div class="InUsuario">Puntos: 45🔥</div></div>
     <div id="nivel"><div class="inNivel">Nivel: Bronce</div><img id="bronceM" src="./img/bronce.png"></div>
     <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
 </div>
