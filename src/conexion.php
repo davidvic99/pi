@@ -14,5 +14,14 @@ class conexion{
         
     }
 
+    public function comprobarSession($session){
+
+        if(!isset($session['usuario'])){
+            //header("Location: login.php");
+            exit();
+             }
+        
+    }
+
 
 }

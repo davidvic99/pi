@@ -1,13 +1,14 @@
 <?php 
 require_once('../src/addKey.php');
+$conexion = new conexion();
+$bbdd = $conexion->conectar();
+$session = $conexion->comprobarSession($_SESSION['usuario']);
+var_dump($_SESSION);
+exit;
+ 
 if(isset($_POST)){
-
-    $username= "apok99";
-    $conexion = new conexion();
-    $conexion = $conexion->conectar();
-
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$username);    
+    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$_SESSION['usuario']);    
 }
 ?>
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ if(isset($_POST)){
     <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
 </div>
 <div id="form">
-<form id="intCodigo" action="hola.php" method="POST" name="codigo" >
+<form id="intCodigo" action="" method="POST" name="codigo" >
     <p class="tituloForm"><b>Introducir Código</b></p>
     <input type="text" class="codigoInput" name="codigo" placeholder="1eXs1d8Ya8aReJd" required>
     <input type="submit" class="validarInput" value="Validar">
