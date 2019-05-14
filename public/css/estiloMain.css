@@ -40,7 +40,7 @@ hr{
 .inNivel{
   float:left;
   text-align: center;
-  margin-top: 16px;
+  margin-top: 14px;
   }
 #puntosUsuario{
   float:left;
@@ -49,7 +49,7 @@ hr{
   border-style: solid;
   border-width: 2px;
   border-color:#8f18ad;
-  height: 32px;
+  height: 56px;
   width:105px;
   text-align: center;
   border-radius: 8px;
@@ -59,7 +59,7 @@ hr{
   float:left;
   text-align: center;
   margin-left: 3px;
-  margin-top: 8px;
+  margin-top: 6px;
   }
 #bronceM{
   width:50px;
@@ -192,9 +192,13 @@ a:hover{
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 32px;
-    width:105px;
+    height: 56px;
+    width:110px;
     text-align: center;
+    }
+    .InUsuario{
+      margin-top: 5px;
+      margin-left: 1px;
     }
   #bronceM{
     width:50px;
