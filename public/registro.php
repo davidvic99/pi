@@ -3,7 +3,7 @@
 require_once('../src/registro.php');
 
 if (!empty($_POST)) {
-    $conexion = new conexion();
+    $conexion = new Conexion();
     $conexion = $conexion->conectar();
 
     $registro = new Registro();

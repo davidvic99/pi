@@ -14,13 +14,14 @@ class Login extends conexion{
             $rows = mysqli_num_rows($result);
             if($rows==1){
 
-                session_start();
 
                 $_SESSION['usuario'] = $usuario;
                 header( "refresh:0.001;url=main.php" );
 
-                return $_SESSION['usuario'];
+                return $_SESSION["usuario"];
 
+
+              
             }else{
               echo "<div class='error' style='display:inherit;'>";
             }
