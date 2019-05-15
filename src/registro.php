@@ -1,7 +1,7 @@
 <?php
 
 require_once('conexion.php');
-class Registro extends conexion{
+class Registro extends Conexion{
 
       
     function __construct(){

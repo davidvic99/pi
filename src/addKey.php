@@ -2,7 +2,7 @@
             
 require('conexion.php');
 
-class AñadirCodigo extends conexion {
+class AñadirCodigo extends Conexion {
 
 
     public function addKey($conn, $post, $usuario){

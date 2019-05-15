@@ -2,7 +2,7 @@
 
 require('conexion.php');
 
-class Login extends conexion{
+class Login extends Conexion{
 
     public function iniciarSesion($conn,$post){
 

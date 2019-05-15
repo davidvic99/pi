@@ -5,10 +5,11 @@ $bbdd = $conexion->conectar();
 $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
 
+    
  
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$_SESSION["usuario"]);    
+    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);    
 }
 ?>
 <!DOCTYPE html>
