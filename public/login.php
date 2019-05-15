@@ -3,7 +3,7 @@
 include('../src/login.php');
   if (!empty($_POST)) {
 
-    $conexion = new conexion();
+    $conexion = new Conexion();
     $conexion = $conexion->conectar();
 
     $login = new Login();

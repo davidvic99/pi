@@ -1,10 +1,10 @@
 <?php 
 require_once('../src/addKey.php');
-$conexion = new conexion();
+$conexion = new Conexion();
 $bbdd = $conexion->conectar();
 $session = $conexion->comprobarSession($_SESSION['usuario']);
-var_dump($_SESSION);
-exit;
+
+
  
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();

@@ -1,5 +1,5 @@
 <?php
-
+            
 require('conexion.php');
 
 class AñadirCodigo extends conexion {
