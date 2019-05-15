@@ -8,7 +8,7 @@ include('../src/login.php');
 
     $login = new Login();
     $login = $login->iniciarSesion($conexion,$_POST);
-  }elseif(empty($_POST)){
+  }
 
 
 ?>
@@ -41,4 +41,4 @@ include('../src/login.php');
     </div>
     </body>
 </html>
-<?php }   ?>
+
