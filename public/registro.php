@@ -7,17 +7,18 @@ if (!empty($_POST)) {
     $conexion = $conexion->conectar();
 
     $registro = new Registro();
-    $registro = $registro->registrar($conexion,$_POST);    
+    $registro = $registro->registrar($conexion,$_POST);
 
 
-}else{  
+}else{
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloRegistro.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
   </head>
   <body>
     <img src="./img/florida.png" alt="">

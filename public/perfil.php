@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloPerfil.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil</title>
   </head>
   <body>
     <img id="perfil" src="./img/user.jpg" alt="">

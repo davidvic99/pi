@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloRecContraseña.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recuperar contraseña</title>
   </head>
   <body>
     <img src="./img/florida.png" alt="">
