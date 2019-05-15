@@ -10,7 +10,6 @@ class AñadirCodigo extends conexion {
         if (isset($post['codigo'])) {
             
             $codigo = $_POST['codigo'];
-            ($codigo);
           
             $codigoExiste = mysqli_query($conn,"SELECT * from codigo where `nombre` = '$codigo'");
             while($codigoExiste1 = mysqli_fetch_assoc($codigoExiste)){

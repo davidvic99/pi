@@ -2,13 +2,13 @@
 require_once('../src/addKey.php');
 $conexion = new Conexion();
 $bbdd = $conexion->conectar();
-$session = $conexion->comprobarSession($_SESSION['usuario']);
+$session = $conexion->comprobarSession($_SESSION["usuario"]);
 
 
  
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$_SESSION['usuario']);    
+    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$_SESSION["usuario"]);    
 }
 ?>
 <!DOCTYPE html>
