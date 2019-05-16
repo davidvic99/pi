@@ -1,14 +1,15 @@
 <?php 
 require_once('../src/addKey.php');
-$conexion = new conexion();
+$conexion = new Conexion();
 $bbdd = $conexion->conectar();
-$session = $conexion->comprobarSession($_SESSION['usuario']);
-var_dump($_SESSION);
-exit;
+$session = $conexion->comprobarSession($_SESSION["usuario"]);
+
+
+    
  
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($conexion,$_POST,$_SESSION['usuario']);    
+    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);    
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ if(isset($_POST)){
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/estiloMain.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 

@@ -2,8 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Page Title</title>
+  <title>Indice</title>
   <link rel="stylesheet" type="text/css" media="screen" href="./css/estiloIndex.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="main.js"></script>
 </head>
 <body>
