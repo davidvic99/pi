@@ -6,7 +6,8 @@ class AñadirCodigo extends Conexion {
 
 
     public function addKey($conn, $post, $usuario){
-
+        echo "<body>";
+            echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>";
         if (isset($post['codigo'])) {
             
             $codigo = $_POST['codigo'];
@@ -20,8 +21,13 @@ class AñadirCodigo extends Conexion {
 
              if (empty($codigoUs)) {
 
-                echo "<h5><p class='codigo'>El código introducido es incorrecto</p></h5>";
-                
+                echo "<script>Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Código introducido incorrecto'
+                  })
+                      </script>";
+
              }elseif($codigoUs==="no"){
 
                 
@@ -88,11 +94,26 @@ class AñadirCodigo extends Conexion {
                     }else{
                             mysqli_query($conn, "UPDATE `users` SET `nivelExp` = $expAhora   WHERE `usuario` = '$usuario'");
                 }
-                   echo "<h5> <p class='codigo'>Codigo Correcto</p></h5>";
+
+                    echo "<script>
+                            Swal.fire({
+                        type: 'success',
+                        title: 'Genial!',
+                        text: 'Código Correcto!',
+                        })
+                        </script>";
+                    
                  
 
             }else{
-                echo "<h5> <p class='codigo'>El código introducido ya esta usado.</p></h5>";
+                echo "<script>Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Código introducido ya usado!'
+                  
+                  })
+                      </script>";
+              
             }
         }
         
