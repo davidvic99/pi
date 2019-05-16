@@ -62,7 +62,7 @@ img{
   margin-right: 25px;
   }
 .error{
-  font-size: 22px;
+  font-size: 12px;
   display: none;
   }
 @media only screen and (max-width: 450px) {
@@ -138,7 +138,7 @@ img{
     margin-right: 25px;
     }
   .error{
-    font-size: 52px;
+    font-size: 22px;
     }
   }
 @media only screen and (max-width: 368px) {
@@ -213,7 +213,7 @@ img{
     margin-right: 25px;
     }
   .error{
-    font-size: 52px;
+    font-size: 22px;
     }
 }
 @media only screen and (max-width: 375px) {
@@ -288,7 +288,7 @@ img{
     margin-right: 25px;
     }
   .error{
-    font-size: 52px;
+    font-size: 22px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -296,6 +296,9 @@ img{
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     }
+  label{
+    font-size: 22px;
+  }
   #fondo{
     height: 100%;
     width: 100%;
@@ -362,6 +365,6 @@ img{
     margin-right: 25px;
     }
   .error{
-    font-size: 52px;
+    font-size: 22px;
     }
 }
