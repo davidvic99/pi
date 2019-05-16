@@ -1,16 +1,20 @@
 <?php 
 require_once('../src/addKey.php');
+require_once('../src/infoUsuario.php');
+
 $conexion = new Conexion();
 $bbdd = $conexion->conectar();
 $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
+$infou = new InfoUsuario();
+$setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);  
 
-    
- 
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);    
+    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);  
 }
+    
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,8 +31,8 @@ if(isset($_POST)){
 <body>
 
 <div id="userInfo">
-    <div id="puntosUsuario"><div class="InUsuario">Puntos: 45🔥</div></div>
-    <div id="nivel"><div class="inNivel">Nivel: Bronce</div><img id="bronceM" src="./img/bronce.png"></div>
+    <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
+    <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
     <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
 </div>
 <div id="form">
@@ -37,7 +41,7 @@ if(isset($_POST)){
     <input type="text" class="codigoInput" name="codigo" placeholder="1eXs1d8Ya8aReJd" required>
     <input type="submit" class="validarInput" value="Validar">
     <div id="info">
-    <p class="rojo">El codigo fue usado/ no es valido. <span class="verde">El codigo es correcto</span></p>
+    <p class="rojo">El codigo fue usado/no es valido. <span class="verde">El codigo es correcto</span></p>
 </div>
 </form>
 
@@ -86,4 +90,9 @@ if(isset($_POST)){
 
 </div>
 </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+           
+          
+
 </html>

@@ -4,6 +4,8 @@ require('conexion.php');
 
 class Login extends Conexion{
 
+   
+
     public function iniciarSesion($conn,$post){
 
         if (isset($post['usuario'])) {
