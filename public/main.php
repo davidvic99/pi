@@ -32,6 +32,7 @@ if(isset($_POST)){
 </head>
 <body>
 
+
 <div id="userInfo">
     <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
     <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
@@ -90,9 +91,14 @@ endif; ?>
 <?php } ?>
 </div>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script>
+    
            
+            $("#userInfo").load("main.php");
+            
+    </script>
           
 
 </html>
