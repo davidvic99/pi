@@ -8,7 +8,7 @@ $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
 $infou = new InfoUsuario();
 $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);  
- var_dump($setInfo);
+
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
     $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);  
