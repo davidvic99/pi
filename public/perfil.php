@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloPerfil.css">
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-=======
     <meta name="viewport" content="width=device-width, initial-scale=1">
->>>>>>> master
     <title>Perfil</title>
   </head>
   <body>
@@ -32,12 +28,12 @@
   <div class="adInfo"><b>Información Adicional</b><br></div>
   <div id="centro">
   <p>
-    <p>Nombre: Ejemplo</p>
-    <p>Apellidos: Ejemplo</p>
-    <p>DNI: Ejemplo</p>
-    <p>Estudios: DAW</p>
-    <p>Correo: yomismo@yomismo.cat</p>
-    <p>Ciudad: Valencia</p>
+    <p><b>Nombre</b>: Ejemplo</p>
+    <p><b>Apellidos</b>: Ejemplo</p>
+    <p><b>DNI</b>: Ejemplo</p>
+    <p><b>Estudios</b>: DAW</p>
+    <p><b>Correo</b>: yomismo@yomismo.cat</p>
+    <p><b>Ciudad</b>: Valencia</p>
 
     </p>
     </div>
