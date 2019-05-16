@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="main.js"></script>
 </head>
-<body>
+<body background="./img/fl.jpg">
+<div class="tablaflot">
 
 <div class="logo">
 
@@ -24,12 +25,14 @@
 </form>
 
 </div>
-
+</div>
 <div id="footer">
 
 <p>Florida Universitaria © 2019 - AppDescuentos </p>
 
 </div>
+
+
 
 </body>
 </html>
