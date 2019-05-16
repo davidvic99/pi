@@ -35,7 +35,6 @@ include('../src/login.php');
             <div class="div3">
             <a href="recuperarContraseña.php" id="fr_pw">¿Has olvidado tu contraseña?</a>
           <input class="submit" type="submit" value="Login">
-          <div class="error">No has introducido la contraseña</div>
             </div>
           </form>
         </div>

@@ -21,9 +21,9 @@ class Login extends Conexion{
                 return $_SESSION["usuario"];
 
 
-              
+
             }else{
-              echo "<div class='error' style='display:inherit;'>";
+              
             }
 
         }else{

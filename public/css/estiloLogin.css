@@ -61,105 +61,23 @@ img{
 #rt_log{
   margin-right: 25px;
   }
-.error{
-  font-size: 12px;
-  display: none;
-  }
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   body{
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     }
   #fondo{
-    height: 100%;
-    width: 100%;
     max-height: none;
     justify-content: none;
     align-items: none;
     display: inherit;
-    margin-bottom: 5px;
+    margin-top:0px;
     }
   .submit{
     border-radius: 5px;
     width: 180px;
     height: 55px;
-    margin-left: 70px;
-    margin-top: 85px;
-    font-size: 22px;
-    }
-  .submit:hover{
-    background-color: #c9c9c9;
-    }
-  input:hover{
-    background-color:#ededed;
-    }
-  input{
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color:#8c8c8c;
-    background-color:#ededed;
-    font-size: 20px;
-    }
-  .div1{
-    margin-top: 10px;
-    padding: 0px;
-    }
-  .div2{
-    margin-top: 80px;
-    padding: 0px;
-    margin-left: 45px;
-    margin-right: 15px;
-    }
-  img{
-    width:350px;
-    height:160px;
-    margin-left: 8%;
-    }
-  #dni_txt{
-    width:330px;
-    height:38px;
-    margin-bottom: 15px;
-  }
-  #psw{
-    margin-right:0px;
-    margin-top:45px;
-    }
-  #psw_txt{
-    width:330px;
-    height:38px;
-    }
-  #fr_pw{
-    margin-right:25px;
-    margin-top: 1px;
-    font-size: 18px;
-    }
-  #rt_log{
-    margin-right: 25px;
-    }
-  .error{
-    font-size: 22px;
-    }
-  }
-@media only screen and (max-width: 368px) {
-  body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    }
-  #fondo{
-    height: 100%;
-    width: 100%;
-    max-height: none;
-    justify-content: none;
-    align-items: none;
-    display: inherit;
-    margin-bottom: 5px;
-    }
-  .submit{
-    border-radius: 5px;
-    width: 180px;
-    height: 55px;
-    margin-left: 75px;
+    margin-left: 15px;
     margin-top: 45px;
     font-size: 22px;
     }
@@ -178,141 +96,68 @@ img{
     font-size: 20px;
     }
   .div1{
-    margin-top: 10px;
+    float:left;
+    margin-top: 0px;
     padding: 0px;
+    width: 35%;
+    height: 768px;
+    background-color: #c1e6ff;
     }
   .div2{
-    margin-top: 80px;
+    float:right;
     padding: 0px;
-    margin-left: -2px;
-    margin-right: 5px;
-    }
-  img{
-    width:350px;
-    height:160px;
-    margin-left: 1%;
-    }
-  #dni_txt{
-    width:330px;
-    height:38px;
-  }
-  #psw{
-    margin-right:0px;
-    margin-top:45px;
-    }
-  #psw_txt{
-    width:330px;
-    height:38px;
-    }
-  #fr_pw{
-    margin-right:25px;
-    margin-top: 1px;
-    font-size: 18px;
-    }
-  #rt_log{
-    margin-right: 25px;
-    }
-  .error{
-    font-size: 22px;
-    }
-}
-@media only screen and (max-width: 375px) {
-  body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    }
-  #fondo{
-    height: 100%;
-    width: 100%;
-    max-height: none;
-    justify-content: none;
-    align-items: none;
-    display: inherit;
-    margin-bottom: 5px;
-    }
-  .submit{
-    border-radius: 5px;
-    width: 180px;
-    height: 55px;
-    margin-left: 75px;
-    margin-top: 45px;
-    font-size: 22px;
-    }
-  .submit:hover{
-    background-color: #c9c9c9;
-    }
-  input:hover{
-    background-color:#ededed;
-    }
-  input{
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color:#8c8c8c;
-    background-color:#ededed;
-    font-size: 20px;
-    }
-  .div1{
-    margin-top: 10px;
-    padding: 0px;
-    }
-  .div2{
-    margin-top: 80px;
-    padding: 0px;
-    margin-left: 5%;
-    margin-right: 5px;
-    }
-  img{
-    width:350px;
-    height:160px;
-    margin-left: 1%;
-    }
-  #dni_txt{
-    width:330px;
-    height:38px;
-  }
-  #psw{
-    margin-right:0px;
-    margin-top:45px;
-    }
-  #psw_txt{
-    width:330px;
-    height:38px;
-    }
-  #fr_pw{
-    margin-right:25px;
-    margin-top: 1px;
-    font-size: 18px;
-    }
-  #rt_log{
-    margin-right: 25px;
-    }
-  .error{
-    font-size: 22px;
-    }
-}
-@media only screen and (max-width: 320px) {
-  body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    margin-top: 20%;
+    margin-right: 80px;
     }
   label{
-    font-size: 22px;
+    margin-left: 8%;
   }
+  img{
+    width:320px;
+    margin-top: 78%;
+    margin-left: 4%;
+    height:160px;
+    }
+  #dni_txt{
+    width:330px;
+    height:38px;
+    margin-left: 8%;
+  }
+  #psw{
+    margin-right:0px;
+    margin-top:45px;
+    }
+  #psw_txt{
+    width:330px;
+    height:38px;
+    margin-left: 8%;
+    }
+  #fr_pw{
+    margin-right:45px;
+    margin-top: 1px;
+    font-size: 18px;
+    }
+  #rt_log{
+    margin-right: 25px;
+    }
+  }
+@media only screen and (min-width: 350px) and (max-width: 390px) {
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    }
   #fondo{
-    height: 100%;
-    width: 100%;
     max-height: none;
     justify-content: none;
     align-items: none;
     display: inherit;
-    margin-bottom: 5px;
+    margin-top:0px;
     }
   .submit{
     border-radius: 5px;
     width: 180px;
     height: 55px;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top: 45px;
     font-size: 22px;
     }
@@ -331,30 +176,185 @@ img{
     font-size: 20px;
     }
   .div1{
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0px;
+    height: 100%;
+    background-color: #c1e6ff;
     }
   .div2{
-    margin-top: 80px;
+    padding:0px;
+    margin-top: 8%;
+    margin-left: 4%;
+    }
+  img{
+    width:350px;
+    height:160px;
+    margin-left: 2%;
+    }
+  #dni_txt{
+    width:330px;
+    height:38px;
+  }
+  #psw{
+    margin-right:0px;
+    margin-left:0px;
+    margin-top:45px;
+    }
+  #psw_txt{
+    width:330px;
+    height:38px;
+    }
+  #fr_pw{
+    margin-right:25px;
+    margin-top: 1px;
+    font-size: 18px;
+    }
+  #rt_log{
+    margin-right: 25px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 470px) {
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  }
+#fondo{
+  max-height: none;
+  justify-content: none;
+  align-items: none;
+  display: inherit;
+  margin-top:0px;
+  }
+.submit{
+  border-radius: 5px;
+  width: 180px;
+  height: 55px;
+  margin-left: 75px;
+  margin-top: 35%;
+  font-size: 22px;
+  }
+.submit:hover{
+  background-color: #c9c9c9;
+  }
+input:hover{
+  background-color:#ededed;
+  }
+input{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color:#8c8c8c;
+  background-color:#ededed;
+  font-size: 20px;
+  }
+.div1{
+  margin-top: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #c1e6ff;
+  }
+.div2{
+  margin-top: -18%;
+  margin-left: -15%;
+  }
+img{
+  width:350px;
+  height:160px;
+  margin-left: 8%;
+  margin-top:1px;
+  margin-right: 0px;
+  margin-top: 0px;
+  }
+#dni_txt{
+  width:330px;
+  height:38px;
+}
+#psw{
+  margin-right:0px;
+  margin-left:0px;
+  margin-top:45px;
+  }
+#psw_txt{
+  width:330px;
+  height:38px;
+  }
+#fr_pw{
+  margin-right:25px;
+  margin-top: 1px;
+  font-size: 18px;
+  }
+#rt_log{
+  margin-right: 25px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 349px) {
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    }
+  #fondo{
+    height: 100%;
+    width: 100%;
+    max-height: none;
+    justify-content: none;
+    align-items: none;
+    display: inherit;
+    margin-bottom: 0px;
+    }
+  .submit{
+    border-radius: 5px;
+    width: 180px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: 45px;
+    margin-bottom:0px;
+    font-size: 22px;
+    }
+  .submit:hover{
+    background-color: #c9c9c9;
+    }
+  input:hover{
+    background-color:#ededed;
+    }
+  input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color:#8c8c8c;
+    background-color:#ededed;
+    font-size: 20px;
+    }
+  .div1{
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #c1e6ff;
+    }
+  .div2{
+    margin-top: 10px;
     padding: 0px;
     margin-left: 10px;
     margin-right: 15px;
     }
   img{
-    width:350px;
-    height:160px;
+    width:300px;
+    height:140px;
+    margin-left: 6px;
     }
   #dni_txt{
-    width:330px;
+    width:300px;
     height:38px;
+    margin-right: 0px;
   }
   #psw{
     margin-right:0px;
     margin-top:45px;
     }
   #psw_txt{
-    width:330px;
+    width:300px;
     height:38px;
+    margin-right: 0px;
     }
   #fr_pw{
     margin-right:25px;
@@ -363,8 +363,5 @@ img{
     }
   #rt_log{
     margin-right: 25px;
-    }
-  .error{
-    font-size: 22px;
     }
 }
