@@ -1,9 +1,24 @@
+<?php
+
+require_once('../src/registro.php');
+
+if (!empty($_POST)) {
+    $conexion = new Conexion();
+    $conexion = $conexion->conectar();
+
+    $registro = new Registro();
+    $registro = $registro->registrar($conexion,$_POST);
+
+
+}else{
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/estiloRegistro.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
   </head>
   <body>
     <img src="./img/florida.png" alt="">
@@ -35,3 +50,4 @@
 </form>
   </body>
 </html>
+<?php }  ?>
