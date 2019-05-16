@@ -31,20 +31,9 @@ Class InfoUsuario extends Conexion {
                        
                 }
 
-                $queryOfertas = mysqli_query($conn,"SELECT * FROM `ofertas`");
-                while($queryOfertas1 = mysqli_fetch_assoc($queryOfertas)){
-
-                        $ofertasN[] = $queryOfertas1['nombre'];
-                        $ofertasD[] =  $queryOfertas1['descripcion'];
-                        $ofertasImg[]  =  $queryOfertas1['imagen'];
-                        $ofertasPrecio[]  =  $queryOfertas1['precio'];
-                        $ofertasRango[]     =  $queryOfertas1['rango'];
-                       
-                }
-
-
+                
                 $arrayInfo = array();
-                $arrayInfoPush =array_push($arrayInfo,  $nombre , $apellido, $estudios,$email,  $nivel,  $puntos,   $nivelExp,  $rango,$dni ,$nombreR ,$puntosMin, $img, $ofertasN,$ofertasD,$ofertasImg,$ofertasPrecio,$ofertasRango ); 
+                $arrayInfoPush =array_push($arrayInfo,  $nombre , $apellido, $estudios,$email,  $nivel,  $puntos,   $nivelExp,  $rango,$dni ,$nombreR ,$puntosMin, $img ); 
                 return  $arrayInfo;
 
         }
