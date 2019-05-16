@@ -95,8 +95,13 @@ endif; ?>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script>
     
-           
-            $("#userInfo").load("main.php");
+                $(document).ready(function() { /// Wait till page is loaded
+            $('#userInfo').click(function(){
+                $('#userInfo').load('main.php', function() {
+                    /// can add another function here
+                });
+            });
+            }); //// End of Wait till page is loaded
             
     </script>
           
