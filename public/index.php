@@ -8,6 +8,7 @@
   <script src="main.js"></script>
 </head>
 <body background="./img/fl.jpg">
+
 <div class="inTabla"></div>
 
 <div class="tablaFlot">
