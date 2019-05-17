@@ -106,14 +106,14 @@ class AñadirCodigo extends Conexion {
                  
 
             }else{
-                echo "<script>Swal.fire({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'Código introducido ya usado!'
-                  
-                  })
-                      </script>";
-              
+                    echo "<script>Swal.fire({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: 'Código introducido ya usado!'
+                    
+                    })
+                        </script>";
+                
             }
         }
         
