@@ -15,10 +15,10 @@ Class Ofertas extends Conexion{
         }
         $cuenta = count($ofertaNombre);
         for ($i=0; $i < $cuenta; $i++) { 
-            echo "
+            echo "      
             <br>
             <div >
-            <img  src='./$orfertasImg[$i]'><p id='ofertas1txt  '>
+            <img  src='./$orfertasImg[$i]'><p class='ofertas1txt  '>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
                     <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
@@ -47,7 +47,7 @@ Class Ofertas extends Conexion{
         for ($i=0; $i < $cuenta; $i++) { 
             echo "
             <br>
-            <img  src='./$orfertasImg[$i]'><p id='ofertas1txt  '>
+            <img  src='./$orfertasImg[$i]'><p class='ofertas1txt  '>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
                     <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
@@ -74,7 +74,7 @@ Class Ofertas extends Conexion{
         for ($i=0; $i < $cuenta; $i++) { 
             echo "
             <br>
-            <img  src='./$orfertasImg[$i]'><p id='ofertas1txt  '>
+            <img  src='./$orfertasImg[$i]'><p class ='ofertas1txt  '>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
                     <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
