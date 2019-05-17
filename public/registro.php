@@ -16,13 +16,14 @@ if (!empty($_POST)) {
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estiloRegistro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registro</title>
   </head>
   <body>
     <img src="./img/florida.png" alt="">
-    <form class="" action="" method="post">
+    <form id="registro" action="" method="POST" name="registro" >
     <div class="texto">
         Usuario:
         <input type="text" name="usuario" value="" required><br><br><br>
@@ -35,7 +36,7 @@ if (!empty($_POST)) {
         E-mail:
         <input type="email" name="email" value="" required><br><br><br>
         Estudios:
-        <select name="estudios" required >
+        <select name="estudios"  >
           <option selected>DAW</option>
           <option>3D</option>
           <option>ASIR</option>
@@ -45,9 +46,12 @@ if (!empty($_POST)) {
         <input type="password" name="contraseña" value="" required><br><br><br>
         Repetir contraseña:
         <input type="password" name="contraseña2" value="" required><br><br><br>
-        <input type="submit" name="button" value="Enviar"><br><br><br>
+        <input type="submit" class="validar" value="Enviar" />
+        <a href="index.php"> <input type="button" value="Volver" /></a><br><br><br>
     </form></div>
 </form>
   </body>
+  
+  
 </html>
 <?php }  ?>
