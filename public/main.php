@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('../src/addKey.php');
 require_once('../src/infoUsuario.php');
 require_once('../src/ofertas.php');
@@ -8,14 +8,14 @@ $bbdd = $conexion->conectar();
 $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
 $infou = new InfoUsuario();
-$setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);  
+$setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
 
 
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);  
+    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);
 }
-    
+
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ if(isset($_POST)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/estiloMain.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -53,7 +53,7 @@ if(isset($_POST)){
 <div id="ofertabronce">
     <h2>Ofertas Bronce 🔓</h2>
     <hr width="95%" />
-    <?php 
+    <?php
     $ofertas = new Ofertas();
     $ofertaB = $ofertas->bronce($bbdd);
 
@@ -69,7 +69,7 @@ if(isset($_POST)){
 <hr width="95%" />
 <?php $ofertaP = $ofertas->plata($bbdd); ?>
 </div>
-<?php 
+<?php
 endif; ?>
 <?php  if ($setInfo[9] == "Oro"){ ?>
 <div id="ofertasplata">
@@ -83,7 +83,7 @@ endif; ?>
 <hr width="95%" />
 
     <?php
-  
+
     $ofertaO = $ofertas->oro($bbdd);
 
     ?>
@@ -106,6 +106,6 @@ endif; ?>
             xhttp.send();
             }
     </script>
-          
+
 
 </html>
