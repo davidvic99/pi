@@ -51,7 +51,7 @@ hr{
   border-width: 2px;
   border-color:#8f18ad;
   height: 56px;
-  width:105px;
+  width:125px;
   text-align: center;
   border-radius: 8px;
   margin-left: 4px;
@@ -171,8 +171,8 @@ a:hover{
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 32px;
-    width:115px;
+    height: 56px;
+    width:125px;
     text-align: center;
     margin-right: 8px;
     }
@@ -246,14 +246,14 @@ a:hover{
     border-width: 2px;
     border-color:#f1bd12;
     float:left;
-    margin-right:15px;
+    margin-right:10px;
     padding:3px;
     margin-left:0px;
     }
   .inNivel{
     float:left;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
     }
   #puntosUsuario{
     float:left;
@@ -263,13 +263,13 @@ a:hover{
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 32px;
-    width:115px;
+    height: 56px;
+    width:125px;
     text-align: center;
     }
     .InUsuario{
       margin-top: 5px;
-      margin-left: 1px;
+      margin-left: 0px;
     }
   #bronceM{
     width:50px;
@@ -384,20 +384,24 @@ a:hover{
   .inNivel{
     float:left;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
     }
   #puntosUsuario{
     float:left;
     padding-top:6px;
     margin-left: 1px;
-    margin-top: 3px;
+    margin-top: 1px;
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 29px;
+    height:54px;
     width:115px;
     text-align: center;
     margin-right: 1px;
+    }
+  .InUsuario{
+    margin-top: 8px;
+    margin-left: 0px;
     }
   #oferta1{
     width:36%;
