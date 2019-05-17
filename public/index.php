@@ -8,7 +8,9 @@
   <script src="main.js"></script>
 </head>
 <body background="./img/fl.jpg">
-<div class="tablaflot">
+<div class="inTabla"></div>
+
+<div class="tablaFlot">
 
 <div class="logo">
 
@@ -25,7 +27,10 @@
 </form>
 
 </div>
+
 </div>
+
+
 <div id="footer">
 
 <p>Florida Universitaria © 2019 - AppDescuentos </p>
