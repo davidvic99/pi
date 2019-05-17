@@ -229,7 +229,6 @@ input:hover{
     #centro{
       float: left;
       padding: 0px;
-      margin-left: -72%;
       margin-top: 25%;
 
     }
@@ -265,7 +264,7 @@ input:hover{
     #perfil{
       float: left;
       width: 20%;
-      margin-left: 9%;
+      margin-left: 7%;
       margin-top: 5%;
     }
     #nivel{
@@ -273,59 +272,58 @@ input:hover{
       position: relative;
       width: 16%;
       margin-left: -88%;
-      margin-top: 28%;
+      margin-top: 26.2%;
 
     }
     .info{
       text-align: center;
       font-size: 16px;
       margin-left: 6%;
-      margin-top: 8%;
+      margin-top: 7%;
     }
     .nivel{
       float: left;
-      margin-left: -66%;
+      margin-left: -70%;
       margin-top: 28%;
 
     }
     .puntosAc{
       float: left;
-      margin-left: 60%;
-      margin-top: -15.5%;
+      margin-left: 7%;
+      margin-top: 9%;
 
     }
     .puntosNe{
       font-size: 16px;
       float: left;
       margin-left: 8%;
-      margin-top: 7%;
+      margin-top: 9%;
 
     }
     .ProcesoNivel{
       float: left;
-      margin-left: 23.5%;
+      margin-left: 28%;
       margin-top: 4%;
 
     }
     .adInfo{
       float: left;
-      margin-left: -73%;
+      margin-left: -70%;
       margin-top: 19%;
     }
     #centro{
       float: left;
-      margin-left: 10%;
-      margin-top: 3%;
+      margin-left: -65%;
+      margin-top: 15%;
 
     }
     .boton1{
       margin-top: 0%;
-      margin-left:12%;
-      margin-bottom: 1px;
+      margin-left: 5%;
+      margin-bottom: 5px;
     }
     .boton2{
-      margin-left:12%;
-      margin-bottom: 0%;
+      margin-left:5%;
     }
     progress{
       float: left;
@@ -376,7 +374,7 @@ input:hover{
     }
     .puntosAc{
       float: left;
-      margin-left: 5%;
+      margin-left: 6.5%;
       margin-top: 10%;
 
     }
@@ -394,29 +392,27 @@ input:hover{
     }
     .adInfo{
       float: left;
-      margin-left: -70%;
-      margin-top: 18%;
+      margin-left: -66%;
+      margin-top: 30%;
     }
     #centro{
       float: left;
-      margin-left: -71%;
-      margin-top: 24%;
+      margin-left: -72%;
+      margin-top: 36%;
 
     }
     .boton1{
-      position: absolute;
       margin-top: 0%;
-      margin-left: 6%;
-      margin-bottom: 5%;
+      margin-left: 4%;
+      margin-bottom: 7px;
     }
     .boton2{
-      margin-left:6%;
-      margin-top: 4%;
+      margin-left:4%;
     }
     progress{
       float: left;
-      margin-left: 10%;
-      margin-top: 5%;
+      margin-left: -57%;
+      margin-top: 18%;
       width: 80%;
     }
     input{
