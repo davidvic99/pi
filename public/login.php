@@ -24,7 +24,7 @@ include('../src/login.php');
 
     <div id="fondo">
         <div class="div1">
-        <img src="./img/florida.png">
+        <a href="index.php"><img src="./img/florida.png"></a>
         </div>
         <div class="div2">
           <form method="post" action="  ">
