@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="main.js"></script>
 </head>
-<body background="./img/fl.jpg">
+<body>
+
+<div id="image-back">
+  <img src="./img/fl.jpg" alt="">
+</div>
 
 <div class="inTabla"></div>
 
@@ -37,7 +41,6 @@
 <p>Florida Universitaria © 2019 - AppDescuentos </p>
 
 </div>
-
 
 
 </body>
