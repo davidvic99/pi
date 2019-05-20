@@ -4,7 +4,7 @@ require_once('conexion.php');
 
 Class editPerfil extends Conexion {
 
-        public function editarPerfil($conn, $post){
+        public function editarPerfil($conn, $post, $usuario){
 
             if ((!isset($post['nombre']))&&(!isset($post['apellidos']))&&(!isset($post['email']))&&(!isset($post['dni']))&&(!isset($post['estudios']))) {
 
