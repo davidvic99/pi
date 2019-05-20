@@ -18,12 +18,12 @@ Class Ofertas extends Conexion{
             echo "      
             <br>
             <div >
-            <img  src='./$orfertasImg[$i]'><p class='ofertas1txt  '>
+            <img  src='./$orfertasImg[$i]'><p class='ofertas1txt'>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
-                    <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
+                    <li>Descripcion:  $ofertasDescripcion[$i]</li>
                     <li>Precio: $ofertasPrecio[$i] 💸</li>
-                    <a href='oferta/id=$ofertaID[$i].php'>Usar</a>
+                    <a href='oferta.php?id=$ofertaID[$i]'>Usar</a>
         
                 </ul>
                 </div>
@@ -37,7 +37,7 @@ Class Ofertas extends Conexion{
         //Usar foreach en vez de while and for
         $selectOfertasB = mysqli_query($conn,"SELECT * from `ofertas` where `rango` = 'Plata'");
         while($selectOfertasB1 = mysqli_fetch_assoc($selectOfertasB)){
-
+            $ofertaID[] = $selectOfertasB1['id'];
             $ofertaNombre[] = $selectOfertasB1['nombre'];
             $ofertasDescripcion[] = $selectOfertasB1['descripcion'];
             $orfertasImg[] = $selectOfertasB1['imagen'];
@@ -47,14 +47,16 @@ Class Ofertas extends Conexion{
         for ($i=0; $i < $cuenta; $i++) { 
             echo "
             <br>
+            <div>
             <img  src='./$orfertasImg[$i]'><p class='ofertas1txt  '>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
-                    <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
+                    <li>Descripcion:  $ofertasDescripcion[$i]</li>
                     <li>Precio: $ofertasPrecio[$i] 💸</li>
-                    <a href='oferta1.php'>Usar</a>
+                    <a href='oferta.php?id=$ofertaID[$i]'>Usar</a>
         
                 </ul>
+                </div>
                 ";
         }
         
@@ -64,7 +66,7 @@ Class Ofertas extends Conexion{
         //Usar foreach en vez de while and for
         $selectOfertasB = mysqli_query($conn,"SELECT * from `ofertas` where `rango` = 'Oro'");
         while($selectOfertasB1 = mysqli_fetch_assoc($selectOfertasB)){
-
+            $ofertaID[] = $selectOfertasB1['id'];
             $ofertaNombre[] = $selectOfertasB1['nombre'];
             $ofertasDescripcion[] = $selectOfertasB1['descripcion'];
             $orfertasImg[] = $selectOfertasB1['imagen'];
@@ -74,14 +76,16 @@ Class Ofertas extends Conexion{
         for ($i=0; $i < $cuenta; $i++) { 
             echo "
             <br>
-            <img  src='./$orfertasImg[$i]'><p class ='ofertas1txt  '>
+            <div>
+            <img  src='./$orfertasImg[$i]'><p class ='ofertas1txt'>
                 <ul id='ofertas1txt'>
                     <li>Nombre:$ofertaNombre[$i] </li>
-                    <li>Descripcion:  $ofertasDescripcion[$i]ejemplo</li>
+                    <li>Descripcion:  $ofertasDescripcion[$i]</li>
                     <li>Precio: $ofertasPrecio[$i] 💸</li>
-                    <a href='oferta1.php'>Usar</a>
+                    <a href='oferta.php?id=$ofertaID[$i]'>Usar</a>
         
                 </ul>
+                </div>
                 ";
         }
         
