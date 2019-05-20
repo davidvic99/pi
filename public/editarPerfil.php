@@ -11,10 +11,9 @@ require_once('../src/infoUsuario.php');
   $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
   
   if(isset($_POST)){
-    $AñadirCodigo = new AñadirCodigo();
-    $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);
-}
-
+   
+    $editar = new editPerfil();
+    $setEditar = $editar->editarPerfil($)
 
 ?>
 
