@@ -34,7 +34,8 @@ $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
     <?php echo $setInfo[5]?></</div>
     <div class="puntosNe"><b>Puntos necesarios siguiente nivel</b><br>
     <?php $diferencia=$setInfo[10]-$setInfo[5]; echo $diferencia; ?></div>
-    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br><?php  $total = $setInfo[5]*100/$setInfo[10]; echo $total; ?>%</div>
+    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br><?php  $total = $setInfo[5]*100/$setInfo[10]; echo $total;
+    ?>%</div>
     <progress max="100" value="<?php echo $total ?>"></progress><br>
   <a href="./main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
   <br>
