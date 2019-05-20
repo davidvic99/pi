@@ -10,10 +10,12 @@ require_once('../src/infoUsuario.php');
   $infou = new InfoUsuario();
   $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
   
-  if(isset($_POST)){
+  if(!empty($_POST)){
    
     $editar = new editPerfil();
-    $setEditar = $editar->editarPerfil($)
+    $setEditar = $editar->editarPerfil($bbdd,$_POST,$_SESSION["usuario"]);
+
+  }else{
 
 ?>
 
@@ -36,18 +38,19 @@ require_once('../src/infoUsuario.php');
     <div>
     <form class="" action="" method="post">
       <p> Nombre 
-      <input type="text" name="nombre" value=<?php echo $setInfo[0]?> /> </p>
+      <input type="text" name="nombre" value=<?php echo $setInfo[0];?> /> </p>
       <p> Apellidos 
-      <input type="text" name="apellidos" value=<?php echo $setInfo[1]?>/> </p>
+      <input type="text" name="apellidos" value=<?php echo $setInfo[1];?>/> </p>
       <p> Correo 
-      <input type="email" name="email" value=<?php echo $setInfo[3]?> /> </p>
+      <input type="email" name="email" value=<?php echo $setInfo[3];?> /> </p>
       <p> DNI 
-      <input type="text" name="dni" value=<?php echo $setInfo[8]?> /> </p>
+      <input type="text" name="dni" value=<?php echo $setInfo[8];?> /> </p>
       <p> Estudios 
-      <input type="text" name="estudios" value=<?php echo $setInfo[2]?> /> </p>
+      <input type="text" name="estudios" value=<?php echo $setInfo[2];?> /> </p>
       <input type="submit" value="Guardar" />
         <a href="perfil.php"> <input type="button" value="Volver" /></a>
     </form>
     </div>
   </body>
 </html>
+<?php } ?>

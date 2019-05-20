@@ -6,10 +6,9 @@ Class editPerfil extends Conexion {
 
         public function editarPerfil($conn, $post, $usuario){
 
-            if ((!isset($post['nombre']))&&(!isset($post['apellidos']))&&(!isset($post['email']))&&(!isset($post['dni']))&&(!isset($post['estudios']))) {
+          echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>";
+            if ((!empty($post['nombre']))&&(!empty($post['apellidos']))&&(!empty($post['email']))&&(!empty($post['dni']))&&(!empty($post['estudios']))) {
 
-              var_dump($nombre);
-              var_dump($apellidos);
 
               $nombre = $post['nombre'];
               $apellidos = $post['apellidos'];
@@ -17,13 +16,36 @@ Class editPerfil extends Conexion {
               $dni = $post['dni'];
               $estudios = $post['estudios'];
 
-              if ($actualizar = mysqli_query($conn, "UPDATE users SET nombre='$nombre', apellidos='$apellidos', email='$email', dni='$dni', estudios='$estudios' WHERE usuario='$usuario'")) {
-                echo "AAAAAAAAAAAAH YA VA JODER";
+              if ($actualizar = mysqli_query($conn, "UPDATE users SET nombre='$nombre', apellido='$apellidos', email='$email', dni='$dni', estudios='$estudios' WHERE usuario='$usuario'")) {
+                
+                  echo "<script>Swal.fire({
+                    type: 'success',
+                    title: 'Genial!',
+                    text: 'Datos actualizados!',
+                })
+                
+                window.setTimeout(function(){
+
+                  window.location.replace('./perfil.php');
+              }, 2000);
+               </script>";
               } else {
-                echo "NO VA. ME QUIERO MORIR";
-              }
+
+                echo "<script>Swal.fire({
+                  type: 'error',
+                  title: 'Oops...',
+                  text: 'Problemas al actulizar los datos, algun campo en blanco.'
+                })
+              
+              window.setTimeout(function(){
+
+                window.location.replace('./perfil.php');
+            }, 2000);
+             </script>";
+           
               
             }
         }
-}
+  } 
 
+} 
