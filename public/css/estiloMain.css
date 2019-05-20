@@ -23,8 +23,14 @@ h2{
 hr{
   color:#ffffff;
   }
+img{
+  width:5%;
+  margin-left:3%;
+  float:left;
+  }
 #userInfo{
   float:right;
+  width: 400px;
   margin-right:10%;
   margin-top:1%;
   }
@@ -64,11 +70,13 @@ hr{
   }
 #bronceM{
   width:50px;
+  margin-left: 0px;
   }
 #userimg{
   float:right;
   width:50px;
-  margin-right:-50px;
+  margin-right: 20px;
+  margin-bottom: 25px;
   }
 #intCodigo{
   float:left;
@@ -105,6 +113,7 @@ input:hover[type="submit"] {
 #ofertabronce{
   width:100%;
   float: left;
+  margin-top:2%;
   }
 #oferta1{
   width:16%;
@@ -112,9 +121,9 @@ input:hover[type="submit"] {
   float:left;
   }
 #ofertas1txt{
-  margin-left:2%;
+  margin-left:15%;
   font-size: 18px;
-  float:left;
+  float:inherit;
   line-height: 30px;
   }
 #ofertasplata{
@@ -139,11 +148,22 @@ a:hover{
   color:#52adce;
   text-decoration: underline;
   }
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 470px) {
   body{
     margin:0px;
     font-family: 'Roboto', sans-serif;;
     font-size: 18px;
+    }
+  #bronceM{
+    width:50px;
+    height: 55px;
+    }
+  #userimg{
+    float:right;
+    width:60px;
+    margin-left: 0px;
+    margin-top: 2%;
+    height: 65px;
     }
   #userInfo{
     float:left;
@@ -155,31 +175,36 @@ a:hover{
     border-width: 2px;
     border-color:#f1bd12;
     float:left;
-    margin-right:15px;
+    margin-right:10px;
     padding:3px;
-    margin-left:2px;
+    margin-left:0px;
     }
   .inNivel{
     float:left;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 14px;
     }
   #puntosUsuario{
     float:left;
     padding-top:10px;
-    margin-left: 20px;
+    margin-right: 6px;
+    margin-left: 0px;
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 56px;
+    height: 78px;
     width:125px;
     text-align: center;
-    margin-right: 8px;
     }
-  #oferta1{
-    width:36%;
-    height: 25%;
-    margin-left:3%;
+  .InUsuario{
+    margin-top: 12px;
+    margin-left: 0px;
+    }
+  img{
+    width:28%;
+    height: 18%;
+    margin-left:32%;
+    margin-bottom: 10%;
     float:left;
     }
   #ofertas1txt{
@@ -207,12 +232,23 @@ a:hover{
     height:30px;
     font-size: 19px;
     }
+  #userimg{
+    float:right;
+    width:50px;
+    }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 350px) and (max-width: 390px) {
   body{
     margin:0px;
     font-family: 'Roboto', sans-serif;;
     font-size: 18px;
+    }
+  img{
+    width:28%;
+    height: 18%;
+    margin-left:32%;
+    margin-bottom: 10%;
+    float:left;
     }
   .tituloForm{
     font-size: 20px;
@@ -223,8 +259,8 @@ a:hover{
     margin-bottom: 4px;
     }
   .codigoInput{
-    height:25px;
-    width: 150px;
+    height:30px;
+    width: 170px;
     font-size: 16px;
     }
   .validarInput{
@@ -253,7 +289,7 @@ a:hover{
   .inNivel{
     float:left;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 14px;
     }
   #puntosUsuario{
     float:left;
@@ -263,22 +299,24 @@ a:hover{
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 56px;
+    height: 78px;
     width:125px;
     text-align: center;
     }
-    .InUsuario{
-      margin-top: 5px;
-      margin-left: 0px;
+  .InUsuario{
+    margin-top: 12px;
+    margin-left: 0px;
     }
   #bronceM{
     width:50px;
+    height: 55px;
     }
   #userimg{
-    float:left;
-    width:50px;
-    margin-right:-60px;
+    float:right;
+    width:70px;
+    margin-left: 0px;
     margin-top: 2%;
+    height: 75px;
     }
   #intCodigo{
     float:left;
@@ -355,16 +393,44 @@ a:hover{
     text-decoration: underline;
     }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (min-width: 300px) and (max-width: 349px) {
   body{
     margin:0px;
     font-family: 'Roboto', sans-serif;;
     font-size: 17px;
     }
+  .tituloForm{
+    width: 80%;
+    margin-right: 0px;
+    float: left;
+    }
+  #intCodigo{
+    width: 95%;
+    margin-left: 10px;
+    }
+  img{
+    width:28%;
+    height: 18%;
+    margin-left:32%;
+    margin-bottom: 10%;
+    margin-top: 6%;
+    float:left;
+    }
+  hr{
+    margin-bottom: 0px;
+  }
+  #bronceM{
+    width:50px;
+    height: 50px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    }
   #userInfo{
     float:left;
     margin-left: 0%;
     margin-top:2%;
+    width: 100%;
+    margin-right: 0px;
     }
   #nivel{
     border-style: solid;
@@ -376,10 +442,13 @@ a:hover{
     margin-left:2px;
     }
   #userimg{
-    float:left;
+    float:right;
     width:40px;
-    margin-right:-55px;
-    margin-top: 4%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 1%;
+    height:40px;
+    margin-bottom: 0px;
     }
   .inNivel{
     float:left;
@@ -429,12 +498,15 @@ a:hover{
     }
   .codigoInput{
     height:25px;
-    width: 150px;
+    width: 170px;
     font-size: 19px;
     border: 1px solid;
+    margin-left: 18px;
     }
   .validarInput{
     height:30px;
     font-size: 19px;
+    margin-top: 8px;
+    margin-left: 95px;
     }
 }
