@@ -1,5 +1,17 @@
+<?php
+require_once('../src/infoUsuario.php');
+
+
+$conexion = new Conexion();
+$bbdd = $conexion->conectar();
+$session = $conexion->comprobarSession($_SESSION["usuario"]);
+
+$infou = new InfoUsuario();
+$setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
+?>
+
+
 <!DOCTYPE html>
-<!-- saved from url=(0058)http://localhost/Programaci%c3%b3nPHP/PI/public/perfil.php -->
 <html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <link rel="stylesheet" href="./css/estiloPerfil1.css">
@@ -8,21 +20,21 @@
   </head>
   <body>
     <img id="perfil" src="./img/user.jpg" alt="">
-    <div class="info"><b>Nombre y Apellido</b>: Robertito el maki <br>
-    <i><b>DNI:</b> 2102301302W</i>
+    <div class="info"><b>Usuario: </b> <?php echo$_SESSION["usuario"];?>    <br>
+    <i><b>DNI:</b><?php echo $setInfo[8]?></i>
     </div>
     <br>
 
     <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/editarPerfil.php"><input class="boton1" type="submit" name="editarPerfil" value="Editar Perfil"></a>
     <img id="nivel" src="./img/bronce.png" alt="">
     <div class="nivel"><b>Nivel</b><br>
-    Bronce</div>
+    <?php echo $setInfo[7]?></div>
     <div class="puntosAc"><b>Puntos Actuales</b><br>
-    45</div>
+    <?php echo $setInfo[6]?></</div>
     <div class="puntosNe"><b>Puntos necesarios siguiente nivel</b><br>
-    55</div>
-    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br>45%</div>
-    <progress max="100" value="45"></progress><br>
+    <?php $diferencia=$setInfo[10]-$setInfo[6]; echo $diferencia; ?></div>
+    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br><?php  $total = $setInfo[6]*100/$setInfo[10]; echo $total; ?>%</div>
+    <progress max="100" value="<?php echo $total ?>"></progress><br>
   <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
   <br>
   <div class="adInfo"><b>Información Adicional</b><br></div>
