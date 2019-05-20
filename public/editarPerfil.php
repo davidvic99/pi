@@ -1,6 +1,6 @@
 <?php
 
-require_once('../src/editPerfil.php');
+require_once('../src/editarPerfil.php');
 require_once('../src/infoUsuario.php');
 
   $conexion = new Conexion();
@@ -10,7 +10,10 @@ require_once('../src/infoUsuario.php');
   $infou = new InfoUsuario();
   $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
   
-  
+  if(isset($_POST)){
+   
+    $editar = new editPerfil();
+    $setEditar = $editar->editarPerfil($)
 
 ?>
 
