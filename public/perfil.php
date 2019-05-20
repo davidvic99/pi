@@ -8,6 +8,7 @@ $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
 $infou = new InfoUsuario();
 $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
+
 ?>
 
 
@@ -25,17 +26,17 @@ $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
     </div>
     <br>
 
-    <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/editarPerfil.php"><input class="boton1" type="submit" name="editarPerfil" value="Editar Perfil"></a>
-    <img id="nivel" src="./img/bronce.png" alt="">
+    <a href="./editarPerfil.php"><input class="boton1" type="submit" name="editarPerfil" value="Editar Perfil"></a>
+    <img id="nivel" src="./<?php echo $setInfo[11]?>" alt="">
     <div class="nivel"><b>Nivel</b><br>
     <?php echo $setInfo[7]?></div>
     <div class="puntosAc"><b>Puntos Actuales</b><br>
-    <?php echo $setInfo[6]?></</div>
+    <?php echo $setInfo[5]?></</div>
     <div class="puntosNe"><b>Puntos necesarios siguiente nivel</b><br>
-    <?php $diferencia=$setInfo[10]-$setInfo[6]; echo $diferencia; ?></div>
-    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br><?php  $total = $setInfo[6]*100/$setInfo[10]; echo $total; ?>%</div>
+    <?php $diferencia=$setInfo[10]-$setInfo[5]; echo $diferencia; ?></div>
+    <div class="ProcesoNivel"><b>Proceso de nivel:</b><br><?php  $total = $setInfo[5]*100/$setInfo[10]; echo $total; ?>%</div>
     <progress max="100" value="<?php echo $total ?>"></progress><br>
-  <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
+  <a href="./main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
   <br>
   <div class="adInfo"><b>Información Adicional</b><br></div>
   <div id="centro">

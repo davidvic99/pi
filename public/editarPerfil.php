@@ -1,6 +1,6 @@
 <?php
 
-require_once('../src/editPerfil.php');
+require_once('../src/editarPerfil.php');
 require_once('../src/infoUsuario.php');
 
   $conexion = new Conexion();
