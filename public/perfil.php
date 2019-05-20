@@ -40,14 +40,11 @@ $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
   <div class="adInfo"><b>Información Adicional</b><br></div>
   <div id="centro">
   <p>
-    </p><p><b>Nombre</b>: Ejemplo</p>
-    <p><b>Apellidos</b>: Ejemplo</p>
-    <p><b>DNI</b>: Ejemplo</p>
-    <p><b>Estudios</b>: DAW</p>
-    <p><b>Correo</b>: yomismo@yomismo.cat</p>
-    <p><b>Ciudad</b>: Valencia</p>
-
-    <p></p>
+    </p><p><b>Nombre</b>:<?php echo $setInfo[0]  ?></p>
+    <p><b>Apellidos</b>: <?php echo $setInfo[1] ?></p>
+    <p><b>Estudios</b>: <?php echo $setInfo[2] ?></p>
+    <p><b>Correo</b>:<?php echo $setInfo[3] ?></p>
+  </p>
     </div>
 
 
