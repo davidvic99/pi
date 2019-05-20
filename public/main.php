@@ -91,19 +91,6 @@ endif; ?>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-        <script>
     
-                function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("userInfo").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("GET", "<?php $setInfo[5] ?> ", true);
-            xhttp.send();
-            }
-    </script>
-
 
 </html>

@@ -37,18 +37,18 @@ require_once('../src/infoUsuario.php');
 
     <div>
     <form class="" action="" method="post">
-      <p> Nombre 
-      <input type="text" name="nombre" value=<?php echo $setInfo[0];?> /> </p>
-      <p> Apellidos 
-      <input type="text" name="apellidos" value=<?php echo $setInfo[1];?>/> </p>
-      <p> Correo 
-      <input type="email" name="email" value=<?php echo $setInfo[3];?> /> </p>
+     <label>Nombre</label>
+      <input type="text" name="nombre" value=<?php echo $setInfo[0];?>> </p>
+      <label>Apellidos</label>
+      <input type="text" name="apellidos" value=<?php echo $setInfo[1];?>> </p>
+      <label>Email</label>
+      <input type="email" name="email" value=<?php echo $setInfo[3];?>> </p>
       <p> DNI 
-      <input type="text" name="dni" value=<?php echo $setInfo[8];?> /> </p>
+      <input type="text" name="dni" value=<?php echo $setInfo[8];?>> </p>
       <p> Estudios 
-      <input type="text" name="estudios" value=<?php echo $setInfo[2];?> /> </p>
-      <input type="submit" value="Guardar" />
-        <a href="perfil.php"> <input type="button" value="Volver" /></a>
+      <input type="text" name="estudios" value=<?php echo $setInfo[2];?>> </p>
+      <input type="submit" value="Guardar"/>
+        <a href="perfil.php"> <input type="button" value="Volver"/></a>
     </form>
     </div>
   </body>
