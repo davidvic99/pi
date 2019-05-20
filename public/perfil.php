@@ -14,7 +14,7 @@ $setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);
 <!DOCTYPE html>
 <html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <link rel="stylesheet" href="./css/estiloPerfil1.css">
+    <link rel="stylesheet" href="./css/estiloPerfil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Perfil</title>
   </head>
