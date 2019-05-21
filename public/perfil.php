@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)http://localhost/Programaci%c3%b3nPHP/PI/public/perfil.php -->
 <html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+  <head>
     <link rel="stylesheet" href="./css/estiloPerfil1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Perfil</title>
