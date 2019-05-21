@@ -24,10 +24,17 @@ class UsarOferta extends conexion{
                 $puntosUsuario = $puntos - $precioO;
                 $puntosUpdate = mysqli_query($conn,"UPDATE `users` SET `puntos` = $puntosUsuario WHERE `usuario` ='$usuario'");
                 $dateNow = date("Y-m-d H:i:s");
+<<<<<<< HEAD
+=======
 
-                echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;
+                echo "<div class='oferta'>".$nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'><br><br>"."Fecha de activación ".$dateNow."</div>";
+>>>>>>> ArnauDeLao
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ArnauDeLao
             }else {
 
                 echo "<script>Swal.fire({
@@ -58,7 +65,11 @@ class UsarOferta extends conexion{
                         $puntosUsuario = $puntos - $precioO;
                         $puntosUpdate = mysqli_query($conn,"UPDATE `users` SET `puntos` = $puntosUsuario WHERE `usuario` ='$usuario'");
                         $dateNow = date("Y-m-d H:i:s");
+<<<<<<< HEAD
                         echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación". $dateNow;   
+=======
+                        echo "<div class='oferta'>".$nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'><br><br>"."Fecha de activación ". $dateNow."</div>";
+>>>>>>> ArnauDeLao
 
 
 
@@ -106,7 +117,11 @@ class UsarOferta extends conexion{
                     $puntosUsuario = $puntos - $precioO;
                     $puntosUpdate = mysqli_query($conn,"UPDATE `users` SET `puntos` = $puntosUsuario WHERE `usuario` ='$usuario'");
                     $dateNow = date("Y-m-d H:i:s");
+<<<<<<< HEAD
                     echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;
+=======
+                    echo "<div class='oferta'>".$nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'><br><br>"."Fecha de activación ".$dateNow."</div>";
+>>>>>>> ArnauDeLao
 
 
                 }else {

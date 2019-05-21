@@ -23,9 +23,12 @@ $datos = $usarO->comprarOferta($bbdd,$_GET['id'],$_SESSION["usuario"], $setInfo[
     <link rel="stylesheet" href="./css/estiloOferta.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
+<<<<<<< HEAD
   <body>
     <div class="mid">
 
     </div>
   </body>
+=======
+>>>>>>> ArnauDeLao
 </html>
