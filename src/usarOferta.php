@@ -105,27 +105,18 @@ class UsarOferta extends conexion{
                     
                     $puntosUsuario = $puntos - $precioO;
                     $puntosUpdate = mysqli_query($conn,"UPDATE `users` SET `puntos` = $puntosUsuario WHERE `usuario` ='$usuario'");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fe2e5ad99fc60f170384bd8dcffdb7f08a040df4
+
                     $dateNow = date("Y-m-d H:i:s");   
                     echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;  
                         
                
-<<<<<<< HEAD
-=======
+
                     $dateNow = date("Y-m-d H:i:s");
-<<<<<<< HEAD
+
                     echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;
-=======
+
                     echo "<div class='oferta'>".$nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'><br><br>"."Fecha de activación ".$dateNow."</div>";
->>>>>>> ArnauDeLao
 
-
->>>>>>> 6ac7c919228f11ad7825430f3c2152dc69aa287b
-=======
->>>>>>> fe2e5ad99fc60f170384bd8dcffdb7f08a040df4
                 }else {
 
                     echo "<script>Swal.fire({
