@@ -1,5 +1,7 @@
 body{
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
 }
 .izq{
   float: left;
@@ -30,6 +32,68 @@ form{
   margin-left: 130%;
 }
 
-input{
-  height: 20px;
-}
+input:hover{
+    background-color:#ededed;
+      height: 20px;
+    }
+  input{
+    width: 120px;
+    height: 28px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color:#8c8c8c;
+    background-color:#ededed;
+    font-size: 17px;
+    }
+@media only screen and (max-width: 996px) {
+  body{
+    margin-left: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+  }
+  .izq{
+    float: left;
+    width: 33%;
+    height: 100%;
+    background-color: white;
+  }
+
+  #florida{
+    width: 200%;
+    margin-top: 30%;
+    margin-bottom: 71.5%;
+    margin-left: 30;
+  }
+
+  #fotoPerfil{
+    position: relative;
+    margin-top: -40%;
+    width: 40%;
+    float: left;
+    margin-left: 105%;
+  }
+
+  form{
+    width: 100px;
+    float: left;
+    position: relative;
+    margin-top: -10%;
+    margin-left: 20%;
+  }
+
+  input:hover{
+      background-color:#ededed;
+        height: 20px;
+      }
+    input{
+      width: 212px;
+      height: 28px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-color:#8c8c8c;
+      background-color:#ededed;
+      font-size: 17px;
+      }
+ }
