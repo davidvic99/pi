@@ -107,7 +107,7 @@ class UsarOferta extends conexion{
                     $puntosUpdate = mysqli_query($conn,"UPDATE `users` SET `puntos` = $puntosUsuario WHERE `usuario` ='$usuario'");
                     $dateNow = date("Y-m-d H:i:s");   
                     echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;  
-                    
+                        
                
                 }else {
 
