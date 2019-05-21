@@ -110,13 +110,6 @@ class UsarOferta extends conexion{
                     echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;  
                         
                
-
-                    $dateNow = date("Y-m-d H:i:s");
-
-                    echo $nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'>"."Fecha de activación".$dateNow;
-
-                    echo "<div class='oferta'>".$nombreO."<br>".$descripcionO."<br>"."<img src='./$imagenO'><br><br>"."Fecha de activación ".$dateNow."</div>";
-
                 }else {
 
                     echo "<script>Swal.fire({
