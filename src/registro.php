@@ -31,7 +31,11 @@ class Registro extends Conexion{
                             type: 'success',
                             title: 'Genial!',
                             text: 'Código Correcto!',
-                        })
+                        })  window.setTimeout(function(){
+
+                            window.location.replace('./login.php');
+                        }, 2000);
+
                             </script>";
                     }else{
                         echo "<script>Swal.fire({
@@ -39,6 +43,10 @@ class Registro extends Conexion{
                             title: 'Oops...',
                             text: 'Una cuenta con este nombre de usuario/dni ya existe'
                           })
+                          window.setTimeout(function(){
+
+                            window.location.replace('./registro.php');
+                        }, 2000);
                               </script>";
                     }
        
@@ -50,7 +58,10 @@ class Registro extends Conexion{
                         type: 'error',
                         title: 'Oops...',
                         text: 'Las contraseñas no coinciden'
-                      })
+                      })  window.setTimeout(function(){
+
+                        window.location.replace('./registro.php');
+                    }, 2000);
                           </script>";
                 }
                
@@ -61,7 +72,10 @@ class Registro extends Conexion{
                     type: 'error',
                     title: 'Oops...',
                     text: 'Algo ha fallado. Verifica todos los campos.'
-                  })
+                  })  window.setTimeout(function(){
+
+                    window.location.replace('./registro.php');
+                }, 2000);
                       </script>";
             }
 
