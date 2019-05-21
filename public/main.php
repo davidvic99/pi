@@ -1,24 +1,20 @@
 <?php
 require_once('../src/addKey.php');
-require_once('../src/infoUsuario.php');
-require_once('../src/ofertas.php');
-
 $conexion = new Conexion();
 $bbdd = $conexion->conectar();
 $session = $conexion->comprobarSession($_SESSION["usuario"]);
 
-$infou = new InfoUsuario();
-$setInfo = $infou -> usuarioInfo($bbdd, $_SESSION["usuario"]);   
+
+
+
 if(isset($_POST)){
     $AñadirCodigo = new AñadirCodigo();
     $AñadirCodigo = $AñadirCodigo->addKey($bbdd,$_POST,$_SESSION["usuario"]);
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
-<head>  
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Main</title>
@@ -30,14 +26,19 @@ if(isset($_POST)){
 </head>
 <body>
 
-
 <div id="userInfo">
+<<<<<<< HEAD
 
 <div id="exp"><div class="expinfousuario">Nivel:<?php echo  $setInfo[4]." Exp: ".$setInfo[6] ?>  </div></div>  
     <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
      
     <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
     <a href="perfil.php"><img class="userimgR" src="img/user.jpg" id="userimg"></a>
+=======
+    <div id="puntosUsuario"><div class="InUsuario">Puntos: 145🔥</div></div>
+    <div id="nivel"><div class="inNivel">Nivel: Bronce</div><img id="bronceM" src="./img/bronce.png"></div>
+    <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
+>>>>>>> 6ac7c919228f11ad7825430f3c2152dc69aa287b
 </div>
 <div id="form">
 <form id="intCodigo" action="" method="POST" name="codigo" >
@@ -45,7 +46,7 @@ if(isset($_POST)){
     <input type="text" class="codigoInput" name="codigo" placeholder="1eXs1d8Ya8aReJd" required>
     <input type="submit" class="validarInput" value="Validar">
     <div id="info">
-    <p class="rojo">El codigo fue usado/no es valido. <span class="verde">El codigo es correcto</span></p>
+    <p class="rojo">El codigo fue usado/ no es valido. <span class="verde">El codigo es correcto</span></p>
 </div>
 </form>
 
@@ -54,46 +55,44 @@ if(isset($_POST)){
 <div id="ofertabronce">
     <h2>Ofertas Bronce 🔓</h2>
     <hr width="95%" />
-    <?php
-    $ofertas = new Ofertas();
-    $ofertaB = $ofertas->bronce($bbdd);
+    <br>
+    <img id="oferta1" src="./img/ejemplo.png"><p id="ofertas1txt">
+        <ul id="ofertas1txt">
+            <li>Nombre: Ejemplo</li>
+            <li>Descripcion: ejemplo</li>
+            <li>Precio: 15 💸</li>
+            <a href="oferta1.php">Usar</a>
 
-    ?>
-
-
+        </ul></p>
 </div>
-<?php if ($setInfo[9] == "Plata"):
-
-   ?>
 <div id="ofertasplata">
-<h2>Ofertas Plata 🔓 </h2>
-<hr width="95%" />
-<?php $ofertaP = $ofertas->plata($bbdd); ?>
-</div>
-<?php
-endif; ?>
-<?php  if ($setInfo[9] == "Oro"){ ?>
-<div id="ofertasplata">
-<h2>Ofertas Plata 🔓 </h2>
+<h2>Ofertas Plata 🔒 </h2>
 <hr width="95%" />
 <br>
-    <?php  $ofertaP = $ofertas->plata($bbdd); ?>
+<img id="oferta1" src="./img/candado.png"><p id="ofertas1txt">
+<ul id="ofertas1txt">
+            <li>Nombre: Ejemplo</li>
+            <li>Descripcion: ejemplo</li>
+            <li>Precio: 7 💸</li>
+            <a href="oferta1.php">Bloqueado</a>
+
+        </ul></p>
 </div>
+
 <div id="ofertasoro">
-<h2>Ofertas Oro 🔓</h2>
+<h2>Ofertas Oro 🔒</h2>
 <hr width="95%" />
+<br>
+<img id="oferta1" src="./img/candado.png"><p id="ofertas1txt">
+<ul id="ofertas1txt">
+            <li>Nombre: Ejemplo</li>
+            <li>Descripcion: ejemplo</li>
+            <li>Precio: 4 💸</li>
+            <a href="oferta1.php">Bloqueado</a>
 
-    <?php
-
-    $ofertaO = $ofertas->oro($bbdd);
-
-    ?>
+        </ul></p>
 </div>
-<?php } ?>
+
 </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    
-
 </html>
