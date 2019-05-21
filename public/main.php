@@ -26,6 +26,7 @@ if(isset($_POST)){
 </head>
 <body>
 
+
 <div id="userInfo">
 
 <div id="exp"><div class="expinfousuario">Nivel:<?php echo  $setInfo[4]." Exp: ".$setInfo[6] ?>  </div></div>  
