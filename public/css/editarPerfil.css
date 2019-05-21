@@ -1,83 +1,35 @@
 body{
   margin: 0px;
 }
+.izq{
+  float: left;
+  width: 33%;
+  height: 100%;
+  background-color: #e61a31;
+}
 
-.button {
-    border-radius: 5px;
-    width: 70px;
-    height: 35px;
-  }
-  .button:hover{
-    background-color: #c9c9c9;
-  }
-  input:hover {
-    background-color:#ededed;
-  }
-  input {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color:#8c8c8c;
-  }
-  .div1 {
-    margin-top:15px;
-    margin-left:640px;
-  }
-  img {
-    width:170px;
-    height:170px;
-    margin-left:50px;
-    padding-top:5px;
-  }
-  form {
-    margin-left:250px;
-    padding-top:5px;
-  }
-  .div2 {
-    margin-left:145px;
-    margin-top:35px;
-  }
-  .div3 {
-    margin-top:35px;
-    margin-right: 15px;
-  }
- 
-  #nombre {
-    margin-left: 13px;
-    width:250px;
-  }
-  #apellidos {
-    margin-left: 5px;
-    width:250px;
-  }
-  #contraseña {
-    margin-left: 4px;
-    width:250px;
-  }
-  #correo {
-    margin-left: 25px;
-    width:250px;
-  }
-  #fotoPerfil{
-    margin-right: 5%;
+#florida{
+  margin-top: 50%;
+  margin-bottom: 71.5%;
+  margin-left: 19%;
+}
 
-    align-items: center;
-    display: block;
-    justify-content: center;
-  }
-  #buttonfoto{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-left:50px;
- 
-  }
-  #editar{
-    float: right;
-    align-items: center;
-    justify-content: center;
-    margin-right: 35%;
-    margin-top:-7%;
-   
-    
-  }
+#fotoPerfil{
+  position: relative;
+  margin-top: -135%;
+  width: 15%;
+  float: left;
+  margin-left: 139%;
+}
+
+form{
+  width: 100px;
+  float: left;
+  position: relative;
+  margin-top: -120%;
+  margin-left: 130%;
+}
+
+input{
+  height: 20px;
+}
