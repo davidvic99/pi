@@ -27,18 +27,12 @@ if(isset($_POST)){
 <body>
 
 <div id="userInfo">
-<<<<<<< HEAD
 
 <div id="exp"><div class="expinfousuario">Nivel:<?php echo  $setInfo[4]." Exp: ".$setInfo[6] ?>  </div></div>  
     <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
      
     <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
     <a href="perfil.php"><img class="userimgR" src="img/user.jpg" id="userimg"></a>
-=======
-    <div id="puntosUsuario"><div class="InUsuario">Puntos: 145🔥</div></div>
-    <div id="nivel"><div class="inNivel">Nivel: Bronce</div><img id="bronceM" src="./img/bronce.png"></div>
-    <a href="perfil.php"><img src="img/user.jpg" id="userimg"></a>
->>>>>>> 6ac7c919228f11ad7825430f3c2152dc69aa287b
 </div>
 <div id="form">
 <form id="intCodigo" action="" method="POST" name="codigo" >
