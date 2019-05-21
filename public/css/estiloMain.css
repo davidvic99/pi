@@ -162,7 +162,7 @@ a:hover{
     border-color: #1db0bb;
     float: left;
     margin-right: 10px;
-    padding: 3px;
+    padding-top: 8px;
     margin-left: -124px;
     height: 56px;
     width: 125px;
@@ -709,7 +709,7 @@ a:hover{
       border-width: 2px;
       border-color: #1db0bb;
       margin-left:30%;
-      padding: 3px;
+      padding-top: 5px;
       border-radius: 8px;
       height: 56px;
       text-align: center;
