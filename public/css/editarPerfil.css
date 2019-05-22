@@ -1,83 +1,106 @@
 body{
   margin: 0px;
-}
-
-.button {
-    border-radius: 5px;
-    width: 70px;
-    height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
   }
-  .button:hover{
-    background-color: #c9c9c9;
+.izq{
+  float: left;
+  width: 33%;
+  height: 100%;
+  background-color: #e61a31;
   }
-  input:hover {
+#florida{
+  margin-top: 50%;
+  margin-bottom: 71.5%;
+  margin-left: 19%;
+  }
+#fotoPerfil{
+  position: relative;
+  margin-top: -135%;
+  width: 15%;
+  float: left;
+  margin-left: 139%;
+  }
+form{
+  width: 100px;
+  float: left;
+  position: relative;
+  margin-top: -120%;
+  margin-left: 130%;
+  }
+input[type=text]{
+  width: 300px;
+  border-radius: 0px;
+  }
+input[type=email]{
+  width: 300px;
+  border-radius: 0px;
+  }
+input:hover{
+  background-color:#ededed;
+  }
+input{
+  width: 90px;
+  border-radius: 5px;
+  height: 28px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color:#8c8c8c;
+  background-color:#ededed;
+  font-size: 17px;
+  }
+@media only screen and (max-width: 996px) {
+  body{
+    margin-left: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    }
+  .izq{
+    float: left;
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    }
+  #florida{
+    width: 200%;
+    margin-top: 30%;
+    margin-bottom: 71.5%;
+    margin-left: 30;
+    }
+  #fotoPerfil{
+    position: relative;
+    margin-top: -40%;
+    width: 40%;
+    float: left;
+    margin-left: 105%;
+    }
+  form{
+    width: 100px;
+    float: left;
+    position: relative;
+    margin-top: -10%;
+    margin-left: 20%;
+    }
+  input[type=text]{
+    width: 212px;
+    border-radius: 0px;
+    }
+  input[type=email]{
+    width: 212px;
+    border-radius: 0px;
+    }
+  input:hover{
     background-color:#ededed;
-  }
-  input {
+    }
+  input{
+    width: 212px;
+    height: 28px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-color:#8c8c8c;
-  }
-  .div1 {
-    margin-top:15px;
-    margin-left:640px;
-  }
-  img {
-    width:170px;
-    height:170px;
-    margin-left:50px;
-    padding-top:5px;
-  }
-  form {
-    margin-left:250px;
-    padding-top:5px;
-  }
-  .div2 {
-    margin-left:145px;
-    margin-top:35px;
-  }
-  .div3 {
-    margin-top:35px;
-    margin-right: 15px;
-  }
- 
-  #nombre {
-    margin-left: 13px;
-    width:250px;
-  }
-  #apellidos {
-    margin-left: 5px;
-    width:250px;
-  }
-  #contraseña {
-    margin-left: 4px;
-    width:250px;
-  }
-  #correo {
-    margin-left: 25px;
-    width:250px;
-  }
-  #fotoPerfil{
-    margin-right: 5%;
-
-    align-items: center;
-    display: block;
-    justify-content: center;
-  }
-  #buttonfoto{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-left:50px;
- 
-  }
-  #editar{
-    float: right;
-    align-items: center;
-    justify-content: center;
-    margin-right: 35%;
-    margin-top:-7%;
-   
-    
-  }
+    background-color:#ededed;
+    font-size: 17px;
+    }
+ }

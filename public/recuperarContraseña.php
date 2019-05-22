@@ -10,8 +10,9 @@
     <img src="./img/florida.png" alt="">
     <form class="" action="" method="post">
     <div class="texto">Ingresa tu coreo electrónico, número de telefono o ID de Florida<br><br>
-    <input type="text" name="" value=""><br><br>
-    <input type="submit" name="button" value="Enviar" onclick=""></div>
+    <input class="input" type="text" name="" value=""><br><br>
+    <input class="boton" type="submit" name="button" value="Enviar">
+    <a href="login.php"><input class="volver" type="button" name="button" value="Volver"></a></div>
 </form>
   </body>
 </html>

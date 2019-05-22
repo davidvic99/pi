@@ -26,6 +26,10 @@ class AñadirCodigo extends Conexion {
                     title: 'Oops...',
                     text: 'Código introducido incorrecto'
                   })
+                  window.setTimeout(function(){
+
+                    window.location.replace('./main.php');
+                }, 2000);
                       </script>";
 
              }elseif($codigoUs==="no"){
@@ -101,6 +105,10 @@ class AñadirCodigo extends Conexion {
                         title: 'Genial!',
                         text: 'Código Correcto!',
                         })
+                        window.setTimeout(function(){
+
+                            window.location.replace('./main.php');
+                        }, 2000);
                         </script>";
                     
                  
@@ -111,7 +119,10 @@ class AñadirCodigo extends Conexion {
                         title: 'Oops...',
                         text: 'Código introducido ya usado!'
                     
-                    })
+                    })window.setTimeout(function(){
+
+                        window.location.replace('./main.php');
+                    }, 2000);   
                         </script>";
                 
             }

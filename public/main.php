@@ -34,7 +34,6 @@ if(isset($_POST)){
 <a href="index.php"><img src="img/florida.png" id="floimg" ></a>
 <a href="perfil.php"><img class="userimgR" src="img/user.jpg" id="userimg"></a>
 <div id="userInfo">
-
 <div id="exp">
     <div class="nivelinfousuario"><b>Nivel</b> <?php echo  $setInfo[4] ?>  </div>
     <div class="expinfousuario"><b>Experiencia</b> <?php echo  $setInfo[6] ?>  </div></div> 
