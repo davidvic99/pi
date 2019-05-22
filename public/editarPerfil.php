@@ -47,7 +47,7 @@ require_once('../src/infoUsuario.php');
       <p> Estudios
       <input type="text" name="estudios" value=<?php echo $setInfo[2]?> /> </p>
       <input type="submit" value="Guardar" /><br><br>
-        <a href="perfil.php"> <input type="button" value="Volver" /></a>
+        <a href="perfil.php"><input type="button" value="Volver" /></a>
     </form>
   </div>
   </body>
