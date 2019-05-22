@@ -3,6 +3,17 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   }
+
+#rojo{
+  height: 13.5%;
+  background-color: #e61a31;
+}
+#floimg{
+  margin-top: 1%;
+  width: 130px;
+  height: 60px;
+}
+
 .tituloForm{
   font-size: 25px;
   }
@@ -23,10 +34,53 @@ h2{
 hr{
   color:#ffffff;
   }
+img{
+  width:5%;
+  margin-left:3%;
+  float:left;
+  }
 #userInfo{
   float:right;
-  margin-right:10%;
-  margin-top:1%;
+  width: 340px;
+  margin-right:0%;
+  margin-top:10%;
+  }
+#exp{
+  float: left;
+  text-align: center;
+  margin-left: 3px;
+  margin-top: 3px;
+  }
+.nivelinfousuario{
+  border-style: solid;
+  border-width: 2px; border-color: #1db0bb;
+  border-radius: 8px;
+  float: left;
+  margin-right: 10px;
+  padding: 0px;
+  margin-left: -300px;
+  height: 35px;
+  width: 250px;
+  margin-top: 35px;
+  text-align: center;
+  background-color:white;
+  font-size: 20px;
+  }
+
+.expinfousuario{
+  border-style: solid;
+  border-width: 2px; border-color: #1db0bb;
+  border-radius: 8px;
+  float: left;
+  margin-right: 10px;
+  padding: 0px;
+  margin-left: -300px;
+  height: 35px;
+  width: 250px;
+  margin-top: 75px;
+  text-align: center;
+  background-color:white;
+  font-size: 20px;
   }
 #nivel{
   border-style: solid;
@@ -36,39 +90,53 @@ hr{
   margin-right:25px;
   padding:3px;
   margin-left:15px;
+  margin-top: 38px;
   border-radius: 8px;
+  background-color:white;
+  height: 75px;
+  width: 150px;
+  font-size: 22px;
   }
 .inNivel{
   float:left;
   text-align: center;
-  margin-top: 14px;
+  margin-left: 8px;
+  margin-top: 0px;
+
   }
 #puntosUsuario{
-  float:left;
-  padding-top:10px;
-  padding-bottom:15px;
   border-style: solid;
   border-width: 2px;
   border-color:#8f18ad;
-  height: 56px;
-  width:125px;
-  text-align: center;
+  float:left;
+  margin-right:0px;
+  padding:3px;
+  margin-left:-15px;
+  margin-top: 38px;
   border-radius: 8px;
-  margin-left: 4px;
+  background-color:white;
+  height: 75px;
+  width: 150px;
+  font-size: 22px;
   }
 .InUsuario{
   float:left;
   text-align: center;
-  margin-left: 3px;
-  margin-top: 6px;
+  margin-left: 35px;
+  margin-top: 0px;
   }
 #bronceM{
-  width:50px;
+  width:60px;
+  margin-left: 0px;
   }
 #userimg{
-  float:right;
-  width:50px;
-  margin-right:-50px;
+  float: right;
+  width: 60px;
+  margin-right: 50px;
+  margin-top: 1%;
+  background-color:white;
+  border: 2px solid limegreen;
+  border-radius: 50px;
   }
 #intCodigo{
   float:left;
@@ -105,6 +173,7 @@ input:hover[type="submit"] {
 #ofertabronce{
   width:100%;
   float: left;
+  margin-top:2%;
   }
 #oferta1{
   width:16%;
@@ -112,9 +181,9 @@ input:hover[type="submit"] {
   float:left;
   }
 #ofertas1txt{
-  margin-left:2%;
+  margin-left:15%;
   font-size: 18px;
-  float:left;
+  float:inherit;
   line-height: 30px;
   }
 #ofertasplata{
@@ -139,86 +208,25 @@ a:hover{
   color:#52adce;
   text-decoration: underline;
   }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 1300px) {
+
   body{
     margin:0px;
-    font-family: 'Roboto', sans-serif;;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
     }
-  #userInfo{
-    float:left;
-    margin-left: 2%;
-    margin-top:2%;
-    }
-  #nivel{
-    border-style: solid;
-    border-width: 2px;
-    border-color:#f1bd12;
-    float:left;
-    margin-right:15px;
-    padding:3px;
-    margin-left:2px;
-    }
-  .inNivel{
-    float:left;
-    text-align: center;
-    margin-top: 16px;
-    }
-  #puntosUsuario{
-    float:left;
-    padding-top:10px;
-    margin-left: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color:#8f18ad;
-    height: 56px;
-    width:125px;
-    text-align: center;
-    margin-right: 8px;
-    }
-  #oferta1{
-    width:36%;
-    height: 25%;
-    margin-left:3%;
-    float:left;
-    }
-  #ofertas1txt{
-    margin-left:1%;
-    float:left;
-    line-height: 28px;
-    }
-  #ofertasplata{
-    width:100%;
-    float: left;
-    margin-top:2%;
-    }
-  #ofertasoro{
-    width:100%;
-    float: left;
-    margin-top:2%;
-    }
-  .codigoInput{
-    height:25px;
-    width: 150px;
-    font-size: 19px;
-    border: 1px solid;
-    }
-  .validarInput{
-    height:30px;
-    font-size: 19px;
-    }
-}
-@media only screen and (max-width: 380px) {
-  body{
-    margin:0px;
-    font-family: 'Roboto', sans-serif;;
-    font-size: 18px;
-    }
+  
+  #rojo{
+    height: 11%;
+    background-color: #e61a31;
+  }
+  
   .tituloForm{
-    font-size: 20px;
+    font-size: 25px;
     }
   h2{
-    font-size: 28px;
+    font-size: 32px;
     margin-left:3%;
     margin-bottom: 4px;
     }
@@ -229,56 +237,112 @@ a:hover{
     }
   .validarInput{
     height:30px;
-    font-size: 19px;
+    font-size: 16px;
     }
   hr{
-    width: 90%
     color:#ffffff;
     }
-  #userInfo{
+  img{
+    width:5%;
+    margin-left:3%;
     float:left;
-    margin-right:10%;
-    margin-left: 2px;
-    margin-top:2%;
     }
+  #userInfo{
+    float:right;
+    width: 250px;
+    margin-right:-13%;
+    margin-top:8%;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+    }
+  .nivelinfousuario{
+    border-style: solid;
+    border-width: 2px; border-color: #1db0bb;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+    padding: 0px;
+    margin-left: -280px;
+    margin-top: 75px;
+    height: 32px;
+    width: 180px;
+    text-align: center;
+    background-color:white;
+    }
+  
+  .expinfousuario{
+    border-style: solid;
+    border-width: 2px; border-color: #1db0bb;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+    padding: 0px;
+    margin-left: -280px;
+    height: 32px;
+    width: 180px;
+    margin-top: 120px;
+    text-align: center;
+    background-color:white;
+    }
+
   #nivel{
+    position: absolute;
     border-style: solid;
     border-width: 2px;
     border-color:#f1bd12;
     float:left;
-    margin-right:10px;
+    margin-right:25px;
     padding:3px;
-    margin-left:0px;
+    margin-left:35px;
+    margin-top: 80px;
+    border-radius: 8px;
+    background-color:white;
+    height: 73px;
+    width: 150px;
     }
   .inNivel{
     float:left;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 0px;
+    margin-left: 8px;
+    background-color:white;
     }
   #puntosUsuario{
-    float:left;
-    padding-top:10px;
-    margin-right: 6px;
-    margin-left: 0px;
+    position: absolute;
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height: 56px;
-    width:125px;
-    text-align: center;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:-75px;
+    margin-top: 80px;
+    border-radius: 8px;
+    background-color:white;
+    height: 72px;
+    width: 102px;
     }
-    .InUsuario{
-      margin-top: 5px;
-      margin-left: 0px;
+  .InUsuario{
+    float:left;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 0px;
     }
   #bronceM{
-    width:50px;
+    width:60px;
+    margin-left: 0px;
     }
   #userimg{
-    float:left;
-    width:50px;
-    margin-right:-60px;
-    margin-top: 2%;
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid limegreen;
+    border-radius: 50px;
     }
   #intCodigo{
     float:left;
@@ -287,11 +351,8 @@ a:hover{
     margin-bottom:3%;
     }
   input[type="text"] {
-    width: 200px;
+    width: 250px;
     text-align: center;
-    font-size: 18px;
-    border-width: 1px;
-    border-style: solid;
     }
   input[type="submit"] {
     width:100px;
@@ -312,20 +373,24 @@ a:hover{
   #info{
     margin-top:1%;
     }
+  .verde{
+    color:#0e8b34
+    }
   #ofertabronce{
     width:100%;
     float: left;
+    margin-top:2%;
     }
   #oferta1{
-    width:36%;
-    height: 25%;
+    width:16%;
     margin-left:3%;
     float:left;
     }
   #ofertas1txt{
-    margin-left:1%;
-    float:left;
-    line-height: 28px;
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
     }
   #ofertasplata{
     width:100%;
@@ -337,14 +402,9 @@ a:hover{
     float: left;
     margin-top:2%;
     }
-  .verde{
-    color:#0e8b34;
-    font-size: 17px;
-    }
   .rojo{
     color:#bd2f3b;
     margin-top: 11px;
-    font-size: 17px;
     }
   a:link{
     color:#52adce;
@@ -354,68 +414,203 @@ a:hover{
     color:#52adce;
     text-decoration: underline;
     }
-}
-@media only screen and (max-width: 330px) {
+} 
+
+
+
+
+@media only screen and (max-width: 950px) {
+
+
   body{
     margin:0px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     }
-  #userInfo{
+  #rojo{
+    height: 10%;
+    background-color: #e61a31;
+    position: relative;
+  }
+  .tituloForm{
+    font-size: 25px;
+    }
+  h2{
+    font-size: 32px;
+    margin-left:3%;
+    margin-bottom: 4px;
+    }
+  .codigoInput{
+    height:25px;
+    width: 150px;
+    font-size: 16px;
+    }
+  .validarInput{
+    height:30px;
+    font-size: 16px;
+    }
+  hr{
+    color:#ffffff;
+    }
+  img{
+    width:5%;
+    margin-left:3%;
     float:left;
-    margin-left: 0%;
-    margin-top:2%;
+    }
+  #userInfo{
+    float:right;
+    width: 300px;
+    margin-right:33%;
+    margin-top:10%;
     }
   #nivel{
+    position: relative;
     border-style: solid;
     border-width: 2px;
     border-color:#f1bd12;
     float:left;
-    margin-right:0px;
-    padding:2px;
-    margin-left:2px;
-    }
-  #userimg{
-    float:left;
-    width:40px;
-    margin-right:-55px;
-    margin-top: 4%;
+    margin-right:25px;
+    padding:3px;
+    margin-left:280px;
+    border-radius: 8px;
+    background-color:white;
+    height: 63px;
+    width: 250px;
+    margin-top: -62px;
+    font-size: 18px;
     }
   .inNivel{
-    float:left;
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 64px;
     text-align: center;
-    margin-top: 12px;
     }
   #puntosUsuario{
-    float:left;
-    padding-top:6px;
-    margin-left: 1px;
-    margin-top: 1px;
+    position: relative;
     border-style: solid;
     border-width: 2px;
     border-color:#8f18ad;
-    height:54px;
-    width:115px;
-    text-align: center;
-    margin-right: 1px;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:38px;
+    border-radius: 8px;
+    background-color:white;
+    height: 62px;
+    width: 200px;
+    margin-top: -5px;
+    font-size: 18px;
+
     }
   .InUsuario{
-    margin-top: 8px;
-    margin-left: 0px;
+    float:left;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 0px;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .nivelinfousuario{
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:35px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    }
+  .expinfousuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:278px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 250px;
+    font-size: 18px;
+    }
+  #userimg{
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid limegreen;
+    border-radius: 50px;
+  }
+
+  #bronceM{
+    position: absolute;
+    width:50px;
+    margin-left: 18px;
+    }
+
+  #intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+    }
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+    }
+  input:hover[type="submit"] {
+    width:100px;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#ffffff;
+    color:white;
+    }
+  #info{
+    margin-top:1%;
+    }
+  .verde{
+    color:#0e8b34
+    }
+  #ofertabronce{
+    width:100%;
+    float: left;
+    margin-top:2%;
     }
   #oferta1{
-    width:36%;
-    height: 25%;
-    margin-left:30%;
+    width:16%;
+    margin-left:3%;
     float:left;
     }
   #ofertas1txt{
-    margin-left:1%;
-    float:left;
-    line-height: 28px;
-    font-size: 20px;
-    margin-top: 8%;
-    margin-bottom: 1%;
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
     }
   #ofertasplata{
     width:100%;
@@ -427,14 +622,673 @@ a:hover{
     float: left;
     margin-top:2%;
     }
+  .rojo{
+    color:#bd2f3b;
+    margin-top: 11px;
+    }
+  a:link{
+    color:#52adce;
+    text-decoration: none;
+    }
+  a:hover{
+    color:#52adce;
+    text-decoration: underline;
+    }
+
+}
+
+
+@media only screen and (max-width: 884px) {
+
+
+  body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    }
+  #rojo{
+    height: 8%;
+    background-color: #e61a31;
+    position: relative;
+  }
+  .tituloForm{
+    font-size: 25px;
+    }
+  h2{
+    font-size: 32px;
+    margin-left:3%;
+    margin-bottom: 4px;
+    }
   .codigoInput{
     height:25px;
     width: 150px;
-    font-size: 19px;
-    border: 1px solid;
+    font-size: 16px;
     }
   .validarInput{
     height:30px;
-    font-size: 19px;
+    font-size: 16px;
     }
+  hr{
+    color:#ffffff;
+    }
+  img{
+    width:5%;
+    margin-left:3%;
+    float:left;
+    }
+  #userInfo{
+    float:right;
+    width: 300px;
+    margin-right:48%;
+    margin-top:0%;
+    }
+  #nivel{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:25px;
+    padding:3px;
+    margin-left:280px;
+    border-radius: 8px;
+    background-color:white;
+    height: 63px;
+    width: 250px;
+    margin-top: -62px;
+    font-size: 18px;
+    }
+  .inNivel{
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 64px;
+    text-align: center;
+    }
+  #puntosUsuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:38px;
+    border-radius: 8px;
+    background-color:white;
+    height: 62px;
+    width: 200px;
+    margin-top: -5px;
+    font-size: 18px;
+
+    }
+  .InUsuario{
+    float:left;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 0px;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .nivelinfousuario{
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:35px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    }
+  .expinfousuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:278px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 250px;
+    font-size: 18px;
+    }
+  #userimg{
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid limegreen;
+    border-radius: 50px;
+  }
+
+  #bronceM{
+    position: absolute;
+    width:50px;
+    margin-left: 18px;
+    }
+
+  #intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+    }
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+    }
+  input:hover[type="submit"] {
+    width:100px;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#ffffff;
+    color:white;
+    }
+  #info{
+    margin-top:1%;
+    }
+  .verde{
+    color:#0e8b34
+    }
+  #ofertabronce{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #oferta1{
+    width:16%;
+    margin-left:3%;
+    float:left;
+    }
+  #ofertas1txt{
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
+    }
+  #ofertasplata{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #ofertasoro{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  .rojo{
+    color:#bd2f3b;
+    margin-top: 11px;
+    }
+  a:link{
+    color:#52adce;
+    text-decoration: none;
+    }
+  a:hover{
+    color:#52adce;
+    text-decoration: underline;
+    }
+
 }
+
+@media only screen and (max-width: 514px) {
+
+
+  body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    }
+  #rojo{
+    height: 8%;
+    background-color: #e61a31;
+    position: relative;
+  }
+  .tituloForm{
+    font-size: 25px;
+    }
+  h2{
+    font-size: 32px;
+    margin-left:3%;
+    margin-bottom: 4px;
+    }
+  .codigoInput{
+    height:25px;
+    width: 150px;
+    font-size: 16px;
+    }
+  .validarInput{
+    height:30px;
+    font-size: 16px;
+    }
+  hr{
+    color:#ffffff;
+    }
+  img{
+    width:5%;
+    margin-left:3%;
+    float:left;
+    }
+  #userInfo{
+    float:right;
+    width: 300px;
+    margin-right:48%;
+    margin-top:1%;
+    }
+  #nivel{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:25px;
+    padding:3px;
+    margin-left:280px;
+    border-radius: 8px;
+    background-color:white;
+    height: 63px;
+    width: 25px;
+    margin-top: -62px;
+    font-size: 18px;
+    }
+  .inNivel{
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 64px;
+    text-align: center;
+    }
+  #puntosUsuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:38px;
+    border-radius: 8px;
+    background-color:white;
+    height: 62px;
+    width: 200px;
+    margin-top: -5px;
+    font-size: 18px;
+
+    }
+  .InUsuario{
+    float:left;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 0px;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .nivelinfousuario{
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:35px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    }
+  .expinfousuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:278px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 250px;
+    font-size: 18px;
+    }
+  #userimg{
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid limegreen;
+    border-radius: 50px;
+  }
+
+  #bronceM{
+    position: absolute;
+    width:50px;
+    margin-left: 18px;
+    }
+
+  #intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+    }
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+    }
+  input:hover[type="submit"] {
+    width:100px;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#ffffff;
+    color:white;
+    }
+  #info{
+    margin-top:1%;
+    }
+  .verde{
+    color:#0e8b34
+    }
+  #ofertabronce{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #oferta1{
+    width:16%;
+    margin-left:3%;
+    float:left;
+    }
+  #ofertas1txt{
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
+    }
+  #ofertasplata{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #ofertasoro{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  .rojo{
+    color:#bd2f3b;
+    margin-top: 11px;
+    }
+  a:link{
+    color:#52adce;
+    text-decoration: none;
+    }
+  a:hover{
+    color:#52adce;
+    text-decoration: underline;
+    }
+
+}
+
+@media only screen and (max-width: 884px) {
+
+
+  body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    }
+  #rojo{
+    height: 10%;
+    background-color: #e61a31;
+    position: relative;
+  }
+  .tituloForm{
+    font-size: 25px;
+    }
+  h2{
+    font-size: 32px;
+    margin-left:3%;
+    margin-bottom: 4px;
+    }
+  .codigoInput{
+    height:25px;
+    width: 150px;
+    font-size: 16px;
+    }
+  .validarInput{
+    height:30px;
+    font-size: 16px;
+    }
+  hr{
+    color:#ffffff;
+    }
+  img{
+    width:5%;
+    margin-left:3%;
+    float:left;
+    }
+  #userInfo{
+    float:right;
+    width: 300px;
+    margin-right:48%;
+    margin-top:0%;
+    }
+  #nivel{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:25px;
+    padding:3px;
+    margin-left:280px;
+    border-radius: 8px;
+    background-color:white;
+    height: 63px;
+    width: 250px;
+    margin-top: -62px;
+    font-size: 18px;
+    }
+  .inNivel{
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 64px;
+    text-align: center;
+    }
+  #puntosUsuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:38px;
+    border-radius: 8px;
+    background-color:white;
+    height: 62px;
+    width: 200px;
+    margin-top: -5px;
+    font-size: 18px;
+
+    }
+  .InUsuario{
+    float:left;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 0px;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .nivelinfousuario{
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:35px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    }
+  .expinfousuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1db0bb;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:278px;
+    border-radius: 8px;
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 35px;
+    width: 250px;
+    font-size: 18px;
+    }
+  #userimg{
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid limegreen;
+    border-radius: 50px;
+  }
+
+  #bronceM{
+    position: absolute;
+    width:50px;
+    margin-left: 18px;
+    }
+
+  #intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+    }
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+    }
+  input:hover[type="submit"] {
+    width:100px;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#ffffff;
+    color:white;
+    }
+  #info{
+    margin-top:1%;
+    }
+  .verde{
+    color:#0e8b34
+    }
+  #ofertabronce{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #oferta1{
+    width:16%;
+    margin-left:3%;
+    float:left;
+    }
+  #ofertas1txt{
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
+    }
+  #ofertasplata{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #ofertasoro{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  .rojo{
+    color:#bd2f3b;
+    margin-top: 11px;
+    }
+  a:link{
+    color:#52adce;
+    text-decoration: none;
+    }
+  a:hover{
+    color:#52adce;
+    text-decoration: underline;
+    }
+
+}
+
