@@ -39,7 +39,7 @@ require_once('../src/infoUsuario.php');
       <p> Nombre
       <input type="text" name="nombre" value=<?php echo $setInfo[0]?> /> </p>
       <p> Apellidos
-      <input type="text" name="apellidos" value=<?php echo $setInfo[1]?>/> </p>
+      <input type="text" name="apellidos" value=<?php echo $setInfo[1]?> /> </p>
       <p> Correo
       <input type="email" name="email" value=<?php echo $setInfo[3]?> /> </p>
       <p> DNI
