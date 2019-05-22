@@ -33,7 +33,7 @@ if(isset($_POST)){
 
 <div id="userInfo">
 
-<div id="exp"><div class="expinfousuario">Nivel: <?php echo  $setInfo[4]." Exp: ".$setInfo[6] ?>  </div></div>  
+<div id="exp"><div class="expinfousuario">NV:<?php echo  $setInfo[4]." Exp:".$setInfo[6]?>🆙 </div></div>  
     <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
      
     <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
