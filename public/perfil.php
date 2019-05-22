@@ -14,8 +14,8 @@
         <div class="info"><b>Nombre y Apellido</b>: Robertito <br>
         <i><b>DNI:</b> 2102301302W</i></div></div>
       <div class="cajaArribaDer">
-        <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/editarPerfil.php"><input class="boton1" type="submit" name="editarPerfil" value="Editar Perfil"></a>
-        <a href="http://localhost/Programaci%c3%b3nPHP/PI/public/main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
+        <a href="./PI/public/editarPerfil.php"><input class="boton1" type="submit" name="editarPerfil" value="Editar Perfil"></a>
+        <a href="./PI/public/main.php"><input class="boton2" type="submit" name="volver" value="Volver"></a>
       </div>
       <div class="cajaMedioIzq">
         <img id="nivel" src="./img/bronce.png" alt="">
