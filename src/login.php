@@ -56,14 +56,16 @@ class Login extends Conexion{
                         }
                     } else {
                         $msg = "Credenciales incorrectos";
+                        echo $msg;   
                     }
 
                 }else {
 
                     $msg = "Usuario o contraseña incorrectos"; 
+                    echo $msg;   
                 
                 }
-                    echo $msg;     
+
         }else{
             "Tienes que rellenar todos los campos";
         }
