@@ -135,7 +135,7 @@ img{
   margin-right: 50px;
   margin-top: 1%;
   background-color:white;
-  border: 2px solid limegreen;
+  border: 2px solid white;
   border-radius: 50px;
   }
 #intCodigo{
@@ -341,7 +341,7 @@ a:hover{
     margin-right: 50px;
     margin-top: 1%;
     background-color:white;
-    border: 2px solid limegreen;
+    border: 2px solid white;
     border-radius: 50px;
     }
   #intCodigo{
@@ -554,7 +554,7 @@ a:hover{
     margin-right: 50px;
     margin-top: 1%;
     background-color:white;
-    border: 2px solid limegreen;
+    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -773,7 +773,7 @@ a:hover{
     margin-right: 50px;
     margin-top: 1%;
     background-color:white;
-    border: 2px solid limegreen;
+    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -856,7 +856,8 @@ a:hover{
 
 }
 
-@media only screen and (max-width: 514px) {
+
+@media only screen and (max-width: 768px) {
 
 
   body{
@@ -866,224 +867,6 @@ a:hover{
     }
   #rojo{
     height: 8%;
-    background-color: #e61a31;
-    position: relative;
-  }
-  .tituloForm{
-    font-size: 25px;
-    }
-  h2{
-    font-size: 32px;
-    margin-left:3%;
-    margin-bottom: 4px;
-    }
-  .codigoInput{
-    height:25px;
-    width: 150px;
-    font-size: 16px;
-    }
-  .validarInput{
-    height:30px;
-    font-size: 16px;
-    }
-  hr{
-    color:#ffffff;
-    }
-  img{
-    width:5%;
-    margin-left:3%;
-    float:left;
-    }
-  #userInfo{
-    float:right;
-    width: 300px;
-    margin-right:48%;
-    margin-top:1%;
-    }
-  #nivel{
-    position: relative;
-    border-style: solid;
-    border-width: 2px;
-    border-color:#f1bd12;
-    float:left;
-    margin-right:25px;
-    padding:3px;
-    margin-left:280px;
-    border-radius: 8px;
-    background-color:white;
-    height: 63px;
-    width: 25px;
-    margin-top: -62px;
-    font-size: 18px;
-    }
-  .inNivel{
-    position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-left: 64px;
-    text-align: center;
-    }
-  #puntosUsuario{
-    position: relative;
-    border-style: solid;
-    border-width: 2px;
-    border-color:#8f18ad;
-    float:left;
-    margin-right:0px;
-    padding:3px;
-    margin-left:38px;
-    border-radius: 8px;
-    background-color:white;
-    height: 62px;
-    width: 200px;
-    margin-top: -5px;
-    font-size: 18px;
-
-    }
-  .InUsuario{
-    float:left;
-    text-align: center;
-    margin-left: 65px;
-    margin-top: 0px;
-    }
-  #exp{
-    float: left;
-    text-align: center;
-    margin-left: 3px;
-  }
-  .nivelinfousuario{
-    position: absolute;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #1db0bb;
-    float:left;
-    margin-right:0px;
-    padding:3px;
-    margin-left:35px;
-    border-radius: 8px;
-    background-color:white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    height: 35px;
-    width: 200px;
-    font-size: 18px;
-    }
-  .expinfousuario{
-    position: relative;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #1db0bb;
-    float:left;
-    margin-right:0px;
-    padding:3px;
-    margin-left:278px;
-    border-radius: 8px;
-    background-color:white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    height: 35px;
-    width: 250px;
-    font-size: 18px;
-    }
-  #userimg{
-    float: right;
-    width: 60px;
-    margin-right: 50px;
-    margin-top: 1%;
-    background-color:white;
-    border: 2px solid limegreen;
-    border-radius: 50px;
-  }
-
-  #bronceM{
-    position: absolute;
-    width:50px;
-    margin-left: 18px;
-    }
-
-  #intCodigo{
-    float:left;
-    margin-left:3%;
-    margin-top:5%;
-    margin-bottom:3%;
-    }
-  input[type="text"] {
-    width: 250px;
-    text-align: center;
-    }
-  input[type="submit"] {
-    width:100px;
-    background-color: rgba(255, 255, 255, 0.781);
-    border-style: solid;
-    border-width: 0.5px;
-    border-color:#000000;
-    color:#050505;
-    }
-  input:hover[type="submit"] {
-    width:100px;
-    background: rgb(0, 0, 0);
-    border-style: solid;
-    border-width: 0.5px;
-    border-color:#ffffff;
-    color:white;
-    }
-  #info{
-    margin-top:1%;
-    }
-  .verde{
-    color:#0e8b34
-    }
-  #ofertabronce{
-    width:100%;
-    float: left;
-    margin-top:2%;
-    }
-  #oferta1{
-    width:16%;
-    margin-left:3%;
-    float:left;
-    }
-  #ofertas1txt{
-    margin-left:15%;
-    font-size: 18px;
-    float:inherit;
-    line-height: 30px;
-    }
-  #ofertasplata{
-    width:100%;
-    float: left;
-    margin-top:2%;
-    }
-  #ofertasoro{
-    width:100%;
-    float: left;
-    margin-top:2%;
-    }
-  .rojo{
-    color:#bd2f3b;
-    margin-top: 11px;
-    }
-  a:link{
-    color:#52adce;
-    text-decoration: none;
-    }
-  a:hover{
-    color:#52adce;
-    text-decoration: underline;
-    }
-
-}
-
-@media only screen and (max-width: 884px) {
-
-
-  body{
-    margin:0px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    }
-  #rojo{
-    height: 10%;
     background-color: #e61a31;
     position: relative;
   }
@@ -1140,7 +923,7 @@ a:hover{
     margin-top: 0px;
     margin-left: 64px;
     text-align: center;
-    }
+      }
   #puntosUsuario{
     position: relative;
     border-style: solid;
@@ -1209,7 +992,7 @@ a:hover{
     margin-right: 50px;
     margin-top: 1%;
     background-color:white;
-    border: 2px solid limegreen;
+    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -1292,3 +1075,217 @@ a:hover{
 
 }
 
+@media only screen and (max-width: 414px) {
+
+
+  body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    }
+  #rojo{
+    height: 8%;
+    background-color: #e61a31;
+    position: relative;
+  }
+  .tituloForm{
+    font-size: 25px;
+    }
+  h2{
+    font-size: 32px;
+    margin-left:3%;
+    margin-bottom: 4px;
+    }
+  .codigoInput{
+    height:25px;
+    width: 150px;
+    font-size: 16px;
+    }
+  .validarInput{
+    height:30px;
+    font-size: 16px;
+    }
+  hr{
+    color:#ffffff;
+    }
+  img{
+    width:5%;
+    margin-left:3%;
+    float:left;
+    }
+  #userInfo{
+    float:right;
+    width: 300px;
+    margin-right:48%;
+    margin-top:1%;
+    }
+  #nivel{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#f1bd12;
+    float:left;
+    margin-right:25px;
+    padding:3px;
+    margin-left:280px;
+    border-radius: 8px;
+    background-color:white;
+    height: 63px;
+    width: 160px;
+    margin-top: -62px;
+    font-size: 18px;
+    }
+  .inNivel{
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 18px;
+    text-align: center;
+    }
+  #puntosUsuario{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#8f18ad;
+    float:left;
+    margin-right:0px;
+    padding:3px;
+    margin-left:145px;
+    border-radius: 8px;
+    background-color:white;
+    height: 62px;
+    width: 120px;
+    margin-top: -5px;
+    font-size: 18px;
+
+    }
+  .InUsuario{
+    float:left;
+    text-align: center;
+    margin-left: 26px;
+    margin-top: 0px;
+    }
+  #exp{
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+    margin-top: 3px;
+    }
+  .nivelinfousuario{
+    border-style: solid;
+    border-width: 2px; border-color: #1db0bb;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+    padding: 0px;
+    margin-left: 165px;
+    height: 35px;
+    width: 250px;
+    margin-top: 35px;
+    text-align: center;
+    background-color:white;
+    font-size: 20px;
+    }
+  .expinfousuario{
+    border-style: solid;
+    border-width: 2px; border-color: #1db0bb;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+    padding: 0px;
+    margin-left: 165px;
+    height: 35px;
+    width: 250px;
+    margin-top: 75px;
+    text-align: center;
+    background-color:white;
+    font-size: 20px;
+  }
+  #userimg{
+    float: right;
+    width: 60px;
+    margin-right: 50px;
+    margin-top: 1%;
+    background-color:white;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+
+  #bronceM{
+    position: absolute;
+    width:50px;
+    margin-left: 18px;
+    }
+
+  #intCodigo{
+    float:left;
+    margin-left:3%;
+    margin-top:5%;
+    margin-bottom:3%;
+    }
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    }
+  input[type="submit"] {
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#000000;
+    color:#050505;
+    }
+  input:hover[type="submit"] {
+    width:100px;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color:#ffffff;
+    color:white;
+    }
+  #info{
+    margin-top:1%;
+    }
+  .verde{
+    color:#0e8b34
+    }
+  #ofertabronce{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #oferta1{
+    width:16%;
+    margin-left:3%;
+    float:left;
+    }
+  #ofertas1txt{
+    margin-left:15%;
+    font-size: 18px;
+    float:inherit;
+    line-height: 30px;
+    }
+  #ofertasplata{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  #ofertasoro{
+    width:100%;
+    float: left;
+    margin-top:2%;
+    }
+  .rojo{
+    color:#bd2f3b;
+    margin-top: 11px;
+    }
+  a:link{
+    color:#52adce;
+    text-decoration: none;
+    }
+  a:hover{
+    color:#52adce;
+    text-decoration: underline;
+    }
+
+}
