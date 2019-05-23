@@ -26,17 +26,19 @@ class Registro extends Conexion{
                     $contraseña = sha1($contraseña);
 
                     if($insertar =  mysqli_query($conn, "INSERT INTO `users` (`id`, `nombre`, `apellido`, `usuario`, `email`, `estudios`, `password`, `nivel`, `puntos`, `Registro`, `rango`, `nivelExp`, `dni`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$email', '$estudios', '$contraseña', '1', '0', CURRENT_TIMESTAMP, 'Bronce', '1', '$dni')")){
-                        echo "<script>
-                            Swal.fire({
+                        
+                                echo "<script>
+                                Swal.fire({
                             type: 'success',
                             title: 'Genial!',
-                            text: 'Código Correcto!',
-                        })  window.setTimeout(function(){
+                            text: 'Cuenta creada!',
+                            })
+                            window.setTimeout(function(){
 
-                            window.location.replace('./login.php');
-                        }, 2000);
+                                window.location.replace('./login.php');
+                            }, 2000);
+                    </script>";
 
-                            </script>";
                     }else{
                         echo "<script>Swal.fire({
                             type: 'error',
