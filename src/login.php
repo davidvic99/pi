@@ -23,7 +23,7 @@ class Login extends Conexion{
 
         if (isset($post['usuario'])) {
 
-            $usuario = $2['usuario'];
+            $usuario = $_REQUEST['usuario'];
             $password = sha1($_REQUEST['password']);
             $result = mysqli_query($conn,"SELECT * FROM `users` WHERE usuario='$usuario'and password='$password'") or die(mysql_error());
             $rows = mysqli_num_rows($result);
