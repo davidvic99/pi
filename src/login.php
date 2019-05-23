@@ -6,7 +6,9 @@ class Login extends Conexion{
 
 
     public function iniciarSesion($conn,$post){
-
+        echo "<body>";
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>";
+        
         $adServer = "ldap://10.2.72.43";    
 
         $ldap = ldap_connect($adServer);
@@ -55,19 +57,36 @@ class Login extends Conexion{
                             return $_SESSION["usuario"];
                         }
                     } else {
-                        $msg = "Credenciales incorrectos";
-                        echo $msg;   
+                        echo "<script>Swal.fire({
+                            type: 'error',
+                            title: 'Oops...',
+                            text: 'Error en login, contraseña o usuario incorrecto.'
+                          })
+                          window.setTimeout(function(){
+
+                            window.location.replace('./login.php');
+                        }, 1000);
+                              </script>";
+                         
                     }
 
                 }else {
+                    echo "<script>Swal.fire({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: 'Error en login, contraseña o usuario incorrecto.'
+                      })
+                      window.setTimeout(function(){
 
-                    $msg = "Usuario o contraseña incorrectos"; 
-                    echo $msg;   
+                        window.location.replace('./login.php');
+                    }, 1000);
+                          </script>";
+
                 
                 }
 
         }else{
-            "Tienes que rellenar todos los campos";
+         
         }
 
 
