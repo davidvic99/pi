@@ -31,14 +31,17 @@ if(isset($_POST)){
 </head>
 <body>
 
-
+<div id="rojo">
+<a href="index.php"><img src="img/florida.png" id="floimg" ></a>
+<a href="perfil.php"><img class="userimgR" src="img/user.jpg" id="userimg"></a>
 <div id="userInfo">
+<div id="exp">
+    <div class="nivelinfousuario"><b>Nivel</b> <?php echo  $setInfo[4] ?>  </div>
+    <div class="expinfousuario"><b>Experiencia</b> <?php echo  $setInfo[6] ?>  </div></div> 
+    <div id="puntosUsuario"><div class="InUsuario"><b>Puntos</b> <br> <?php echo $setInfo[5]?>🔥</div></div>
+    <div id="nivel"><div class="inNivel"><b>Rango</b> <br> <?php echo $setInfo[9] ?>  </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
 
-<div id="exp"><div class="expinfousuario">NV:<?php echo  $setInfo[4]." Exp:".$setInfo[6]?>🆙 </div></div>  
-    <div id="puntosUsuario"><div class="InUsuario">Puntos: <?php echo $setInfo[5]?>🔥</div></div>
-     
-    <div id="nivel"><div class="inNivel">Rango:<?php echo $setInfo[9] ?>    </div><img id="bronceM" src="./<?php echo $setInfo[11]?>"></div>
-    <a href="perfil.php"><img class="userimgR" src="img/user.jpg" id="userimg"></a>
+</div>
 </div>
 <div id="form">
 <form id="intCodigo" action="" method="POST" name="codigo" >
@@ -46,7 +49,6 @@ if(isset($_POST)){
     <input type="text" class="codigoInput" name="codigo" placeholder="1eXs1d8Ya8aReJd" required>
     <input type="submit" class="validarInput" value="Validar">
     <div id="info">
-    <p class="rojo">El codigo fue usado/no es valido. <span class="verde">El codigo es correcto</span></p>
 </div>
 </form>
 
@@ -92,6 +94,7 @@ endif; ?>
 </div>
 <?php } ?>
 </div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
