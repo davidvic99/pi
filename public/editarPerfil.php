@@ -28,6 +28,7 @@ require_once('../src/infoUsuario.php');
     <meta charset="utf-8">
     <title>Editar Perfil</title>
     <link rel="stylesheet" href="./css/editarPerfil.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -38,7 +39,7 @@ require_once('../src/infoUsuario.php');
       <p> Nombre
       <input type="text" name="nombre" value=<?php echo $setInfo[0]?> /> </p>
       <p> Apellidos
-      <input type="text" name="apellidos" value=<?php echo $setInfo[1]?>/> </p>
+      <input type="text" name="apellidos" value=<?php echo $setInfo[1]?> /> </p>
       <p> Correo
       <input type="email" name="email" value=<?php echo $setInfo[3]?> /> </p>
       <p> DNI
@@ -46,7 +47,7 @@ require_once('../src/infoUsuario.php');
       <p> Estudios
       <input type="text" name="estudios" value=<?php echo $setInfo[2]?> /> </p>
       <input type="submit" value="Guardar" /><br><br>
-        <a href="perfil.php"> <input type="button" value="Volver" /></a>
+        <a href="perfil.php"><input type="button" value="Volver" /></a>
     </form>
   </div>
   </body>

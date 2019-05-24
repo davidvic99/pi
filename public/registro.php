@@ -23,36 +23,36 @@ if (!empty($_POST)) {
     <title>Registro</title>
   </head>
   <body>
-    <img src="./img/florida.png" alt="">
+  <div id="cajaimagen">
+      <img src="./img/florida.png" alt="">
+    </div>
     <form id="registro" action="" method="POST" name="registro" >
     <div class="texto">
-        Usuario:
+        Usuario
         <input type="text" name="usuario" value="" required><br><br><br>
-        Nombre:
+        Nombre
         <input type="text" name="nombre" value="" required><br><br><br>
-        Apellidos:
+        Apellidos
         <input type="text" name="apellido" value="" required><br><br><br>
-        DNI:
+        DNI
         <input type="text" name="dni" value="" required><br><br><br>
-        E-mail:
+        E-mail
         <input type="email" name="email" value="" required><br><br><br>
-        Estudios:
+        Estudios
         <select name="estudios"  >
           <option selected>DAW</option>
           <option>3D</option>
           <option>ASIR</option>
           <option>DAM</option>
         </select><br><br>
-        Contraseña:
+        Contraseña
         <input type="password" name="contraseña" value="" required><br><br><br>
-        Repetir contraseña:
+        Repetir contraseña
         <input type="password" name="contraseña2" value="" required><br><br><br>
-        <input type="submit" class="validar" value="Enviar" />
-        <a href="index.php"> <input type="button" value="Volver" /></a><br><br><br>
-    </form></div>
-</form>
+        <input type="submit" value="Enviar" class="boton" />
+        <a href="index.php"> <input type="button" value="Volver" class="boton" /></a><br><br><br>
+      </div>
+    </form>
   </body>
-  
-  
 </html>
 <?php }  ?>

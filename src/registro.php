@@ -26,19 +26,29 @@ class Registro extends Conexion{
                     $contraseña = sha1($contraseña);
 
                     if($insertar =  mysqli_query($conn, "INSERT INTO `users` (`id`, `nombre`, `apellido`, `usuario`, `email`, `estudios`, `password`, `nivel`, `puntos`, `Registro`, `rango`, `nivelExp`, `dni`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$email', '$estudios', '$contraseña', '1', '0', CURRENT_TIMESTAMP, 'Bronce', '1', '$dni')")){
-                        echo "<script>
-                            Swal.fire({
+                        
+                                echo "<script>
+                                Swal.fire({
                             type: 'success',
                             title: 'Genial!',
-                            text: 'Código Correcto!',
-                        })
-                            </script>";
+                            text: 'Cuenta creada!',
+                            })
+                            window.setTimeout(function(){
+
+                                window.location.replace('./login.php');
+                            }, 2000);
+                    </script>";
+
                     }else{
                         echo "<script>Swal.fire({
                             type: 'error',
                             title: 'Oops...',
                             text: 'Una cuenta con este nombre de usuario/dni ya existe'
                           })
+                          window.setTimeout(function(){
+
+                            window.location.replace('./registro.php');
+                        }, 2000);
                               </script>";
                     }
        
@@ -50,7 +60,10 @@ class Registro extends Conexion{
                         type: 'error',
                         title: 'Oops...',
                         text: 'Las contraseñas no coinciden'
-                      })
+                      })  window.setTimeout(function(){
+
+                        window.location.replace('./registro.php');
+                    }, 2000);
                           </script>";
                 }
                
@@ -61,7 +74,10 @@ class Registro extends Conexion{
                     type: 'error',
                     title: 'Oops...',
                     text: 'Algo ha fallado. Verifica todos los campos.'
-                  })
+                  })  window.setTimeout(function(){
+
+                    window.location.replace('./registro.php');
+                }, 2000);
                       </script>";
             }
 
